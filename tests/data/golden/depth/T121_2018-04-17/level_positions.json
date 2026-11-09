@@ -1,0 +1,74 @@
+[
+  {
+    "level": 1,
+    "tube_top_cm": -6.199999999999999,
+    "tube_bottom_cm": 15.39,
+    "soil_top_cm": -5.36935750346352,
+    "soil_bottom_cm": 13.328130964242511,
+    "effective_top_cm": 0.0,
+    "effective_bottom_cm": 13.328130964242511
+  },
+  {
+    "level": 2,
+    "tube_top_cm": 14.120000000000001,
+    "tube_bottom_cm": 35.71,
+    "soil_top_cm": 12.228278701436276,
+    "soil_bottom_cm": 30.925767169142308,
+    "effective_top_cm": 13.328130964242511,
+    "effective_bottom_cm": 30.925767169142308
+  },
+  {
+    "level": 3,
+    "tube_top_cm": 34.44,
+    "tube_bottom_cm": 56.03,
+    "soil_top_cm": 29.825914906336067,
+    "soil_bottom_cm": 48.523403374042104,
+    "effective_top_cm": 30.925767169142308,
+    "effective_bottom_cm": 48.523403374042104
+  },
+  {
+    "level": 4,
+    "tube_top_cm": 54.76,
+    "tube_bottom_cm": 76.35,
+    "soil_top_cm": 47.42355111123586,
+    "soil_bottom_cm": 66.12103957894189,
+    "effective_top_cm": 48.523403374042104,
+    "effective_bottom_cm": 66.12103957894189
+  },
+  {
+    "level": 5,
+    "tube_top_cm": 75.08,
+    "tube_bottom_cm": 96.67,
+    "soil_top_cm": 65.02118731613565,
+    "soil_bottom_cm": 83.71867578384169,
+    "effective_top_cm": 66.12103957894189,
+    "effective_bottom_cm": 83.71867578384169
+  },
+  {
+    "level": 6,
+    "tube_top_cm": 95.4,
+    "tube_bottom_cm": 116.99000000000001,
+    "soil_top_cm": 82.61882352103545,
+    "soil_bottom_cm": 101.31631198874149,
+    "effective_top_cm": 83.71867578384169,
+    "effective_bottom_cm": 101.31631198874149
+  },
+  {
+    "level": 7,
+    "tube_top_cm": 115.72000000000001,
+    "tube_bottom_cm": 137.31,
+    "soil_top_cm": 100.21645972593525,
+    "soil_bottom_cm": 118.91394819364127,
+    "effective_top_cm": 101.31631198874149,
+    "effective_bottom_cm": 118.91394819364127
+  },
+  {
+    "level": 8,
+    "tube_top_cm": 136.04,
+    "tube_bottom_cm": 157.63,
+    "soil_top_cm": 117.81409593083504,
+    "soil_bottom_cm": 136.51158439854106,
+    "effective_top_cm": 118.91394819364127,
+    "effective_bottom_cm": 136.51158439854106
+  }
+]

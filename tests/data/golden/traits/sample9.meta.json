@@ -1,0 +1,435 @@
+{
+  "root_0": {
+    "component_id": 1,
+    "bbox": {
+      "min_r": 82,
+      "max_r": 446,
+      "min_c": 212,
+      "max_c": 510
+    },
+    "n_branches": 4,
+    "merged": [
+      {
+        "id": 3,
+        "merged_from": [
+          3
+        ],
+        "length": 3.82842712474619,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 6,
+        "merged_from": [
+          6
+        ],
+        "length": 1.4142135623730951,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 7,
+        "merged_from": [
+          7
+        ],
+        "length": 3.414213562373095,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 9,
+        "merged_from": [
+          9
+        ],
+        "length": 11.485281374238571,
+        "classification": "normal"
+      },
+      {
+        "id": 13,
+        "merged_from": [
+          13
+        ],
+        "length": 24.485281374238568,
+        "classification": "normal"
+      },
+      {
+        "id": 15,
+        "merged_from": [
+          15
+        ],
+        "length": 8.485281374238571,
+        "classification": "small"
+      },
+      {
+        "id": 18,
+        "merged_from": [
+          18
+        ],
+        "length": 20.38477631085024,
+        "classification": "normal"
+      },
+      {
+        "id": 19,
+        "merged_from": [
+          19
+        ],
+        "length": 6.82842712474619,
+        "classification": "small"
+      },
+      {
+        "id": 20,
+        "merged_from": [
+          20
+        ],
+        "length": 10.82842712474619,
+        "classification": "normal"
+      },
+      {
+        "id": 21,
+        "merged_from": [
+          21
+        ],
+        "length": 81.89949493661166,
+        "classification": "normal"
+      },
+      {
+        "id": 22,
+        "merged_from": [
+          22
+        ],
+        "length": 17.142135623730955,
+        "classification": "normal"
+      },
+      {
+        "id": 23,
+        "merged_from": [
+          23
+        ],
+        "length": 4.82842712474619,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 25,
+        "merged_from": [
+          25
+        ],
+        "length": 9.242640687119284,
+        "classification": "small"
+      },
+      {
+        "id": 27,
+        "merged_from": [
+          27
+        ],
+        "length": 16.656854249492383,
+        "classification": "normal"
+      },
+      {
+        "id": 28,
+        "merged_from": [
+          28
+        ],
+        "length": 26.071067811865476,
+        "classification": "normal"
+      },
+      {
+        "id": 29,
+        "merged_from": [
+          29
+        ],
+        "length": 48.698484809834994,
+        "classification": "normal"
+      },
+      {
+        "id": 33,
+        "merged_from": [
+          33
+        ],
+        "length": 36.89949493661166,
+        "classification": "normal"
+      },
+      {
+        "id": 34,
+        "merged_from": [
+          2,
+          4
+        ],
+        "length": 216.54162613853492,
+        "classification": "normal"
+      },
+      {
+        "id": 35,
+        "merged_from": [
+          5,
+          10
+        ],
+        "length": 50.55634918610404,
+        "classification": "normal"
+      },
+      {
+        "id": 37,
+        "merged_from": [
+          12,
+          30
+        ],
+        "length": 165.52691193458122,
+        "classification": "normal"
+      },
+      {
+        "id": 39,
+        "merged_from": [
+          26,
+          31,
+          32
+        ],
+        "length": 104.70205537395104,
+        "classification": "normal"
+      },
+      {
+        "id": 42,
+        "merged_from": [
+          8,
+          11,
+          14,
+          16,
+          17
+        ],
+        "length": 167.8889679710695,
+        "classification": "normal"
+      }
+    ],
+    "merge_confidence": 0.6,
+    "main_root": {
+      "id": 42,
+      "merged_from": [
+        8,
+        11,
+        14,
+        16,
+        17
+      ]
+    },
+    "branches": [
+      {
+        "id": 21,
+        "merged_from": [
+          21
+        ]
+      },
+      {
+        "id": 34,
+        "merged_from": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 37,
+        "merged_from": [
+          12,
+          30
+        ]
+      },
+      {
+        "id": 39,
+        "merged_from": [
+          26,
+          31,
+          32
+        ]
+      }
+    ]
+  },
+  "root_1": {
+    "component_id": 2,
+    "bbox": {
+      "min_r": 152,
+      "max_r": 188,
+      "min_c": 447,
+      "max_c": 509
+    },
+    "n_branches": 0,
+    "branches": []
+  },
+  "root_2": {
+    "component_id": 3,
+    "bbox": {
+      "min_r": 296,
+      "max_r": 475,
+      "min_c": 298,
+      "max_c": 490
+    },
+    "n_branches": 1,
+    "merged": [
+      {
+        "id": 3,
+        "merged_from": [
+          3
+        ],
+        "length": 175.12489168102786,
+        "classification": "normal"
+      },
+      {
+        "id": 8,
+        "merged_from": [
+          2,
+          5,
+          6
+        ],
+        "length": 184.17692949478004,
+        "classification": "normal"
+      }
+    ],
+    "merge_confidence": 1.0,
+    "main_root": {
+      "id": 8,
+      "merged_from": [
+        2,
+        5,
+        6
+      ]
+    },
+    "branches": [
+      {
+        "id": 3,
+        "merged_from": [
+          3
+        ]
+      }
+    ]
+  },
+  "root_3": {
+    "component_id": 4,
+    "bbox": {
+      "min_r": 325,
+      "max_r": 634,
+      "min_c": 0,
+      "max_c": 480
+    },
+    "n_branches": 1,
+    "merged": [
+      {
+        "id": 3,
+        "merged_from": [
+          3
+        ],
+        "length": 28.04163056034262,
+        "classification": "normal"
+      },
+      {
+        "id": 7,
+        "merged_from": [
+          7
+        ],
+        "length": 40.556349186104036,
+        "classification": "normal"
+      },
+      {
+        "id": 8,
+        "merged_from": [
+          8
+        ],
+        "length": 16.65685424949238,
+        "classification": "normal"
+      },
+      {
+        "id": 10,
+        "merged_from": [
+          10
+        ],
+        "length": 29.14213562373095,
+        "classification": "normal"
+      },
+      {
+        "id": 11,
+        "merged_from": [
+          11
+        ],
+        "length": 1.4142135623730951,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 14,
+        "merged_from": [
+          14
+        ],
+        "length": 28.727922061357855,
+        "classification": "normal"
+      },
+      {
+        "id": 15,
+        "merged_from": [
+          15
+        ],
+        "length": 1.4142135623730951,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 17,
+        "merged_from": [
+          17
+        ],
+        "length": 43.21320343559642,
+        "classification": "normal"
+      },
+      {
+        "id": 19,
+        "merged_from": [
+          2,
+          4
+        ],
+        "length": 279.0886177402115,
+        "classification": "normal"
+      },
+      {
+        "id": 22,
+        "merged_from": [
+          9,
+          13
+        ],
+        "length": 44.48528137423857,
+        "classification": "normal"
+      },
+      {
+        "id": 24,
+        "merged_from": [
+          5,
+          6,
+          12,
+          16,
+          18
+        ],
+        "length": 502.02190936709826,
+        "classification": "normal"
+      }
+    ],
+    "merge_confidence": 0.5,
+    "main_root": {
+      "id": 24,
+      "merged_from": [
+        5,
+        6,
+        12,
+        16,
+        18
+      ]
+    },
+    "branches": [
+      {
+        "id": 19,
+        "merged_from": [
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  "root_4": {
+    "component_id": 13,
+    "bbox": {
+      "min_r": 590,
+      "max_r": 658,
+      "min_c": 25,
+      "max_c": 40
+    },
+    "n_branches": 0,
+    "branches": []
+  }
+}

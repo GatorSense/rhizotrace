@@ -1,0 +1,47 @@
+{
+  "root_0": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 640,
+        "max_r": 722,
+        "min_c": 29,
+        "max_c": 234
+      },
+      "angle": 189.25,
+      "length": 268.27,
+      "length_mm": 22.7133,
+      "avg_diameter": 14.2,
+      "avg_diameter_mm": 1.2023,
+      "diameter_method": 7,
+      "diameter_median": 14.56,
+      "diameter_std": 3.15,
+      "diameter_median_mm": 1.2328,
+      "diameter_std_mm": 0.2663
+    },
+    "main_root": {
+      "id": 8,
+      "merged_from": [
+        3,
+        4,
+        5
+      ],
+      "length": 185.3259018078045,
+      "length_mm": 15.6909,
+      "angle": 185.79,
+      "avg_diameter": 15.08,
+      "avg_diameter_mm": 1.2768,
+      "bbox": {
+        "min_r": 640,
+        "max_r": 722,
+        "min_c": 29,
+        "max_c": 234
+      },
+      "number_of_branches": 0,
+      "diameter_median": 16.0,
+      "diameter_std": 2.71,
+      "diameter_median_mm": 1.3547,
+      "diameter_std_mm": 0.2296
+    },
+    "branches": []
+  }
+}

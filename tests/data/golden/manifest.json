@@ -1,0 +1,44 @@
+{
+  "frozen_at": "2026-08-25T23:17:01+00:00",
+  "settings": "no spur pruning, thickest branch as main root, skeletons under 50 pixels dropped, chain-code lengths",
+  "libraries": {
+    "python": "3.11.9",
+    "numpy": "1.24.4",
+    "scipy": "1.13.1",
+    "scikit-image": "0.24.0",
+    "pandas": "2.1.4",
+    "Pillow": "10.4.0"
+  },
+  "masks": [
+    "sample1.png",
+    "sample10.png",
+    "sample11.png",
+    "sample2.png",
+    "sample3.png",
+    "sample4.png",
+    "sample5.png",
+    "sample6.png",
+    "sample7.png",
+    "sample8.png",
+    "sample9.png"
+  ],
+  "tube": {
+    "name": "T121_2018-04-17",
+    "source": "switchgrass minirhizotron tube T121, session 2018-04-17, level masks from the segmentation model",
+    "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "depth_config": {
+      "offset_cm": 17.7,
+      "tube_angle_deg": 30.0,
+      "depth_bin_size_mm": 10.0
+    }
+  }
+}

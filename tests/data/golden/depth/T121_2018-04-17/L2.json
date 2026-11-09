@@ -1,0 +1,3225 @@
+{
+  "root_0": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 18,
+        "max_r": 40,
+        "min_c": 1066,
+        "max_c": 1168
+      },
+      "angle": 354.11,
+      "length": 105.04,
+      "length_mm": 8.8935,
+      "avg_diameter": 9.68,
+      "avg_diameter_mm": 0.8196,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 4.56,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.386
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 18,
+        "max_r": 40,
+        "min_c": 1066,
+        "max_c": 1168
+      },
+      "angle": 354.11,
+      "length": 105.04,
+      "length_mm": 8.8935,
+      "avg_diameter": 9.68,
+      "avg_diameter_mm": 0.8196,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 10.0,
+      "diameter_std": 4.56,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.386
+    },
+    "branches": []
+  },
+  "root_1": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 18,
+        "max_r": 56,
+        "min_c": 1276,
+        "max_c": 1383
+      },
+      "angle": 1.23,
+      "length": 125.08,
+      "length_mm": 10.5904,
+      "avg_diameter": 14.54,
+      "avg_diameter_mm": 1.2311,
+      "diameter_method": 7,
+      "diameter_median": 14.0,
+      "diameter_std": 8.49,
+      "diameter_median_mm": 1.1853,
+      "diameter_std_mm": 0.7185
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        3,
+        4
+      ],
+      "length": 71.55634918610404,
+      "length_mm": 6.0584,
+      "angle": 188.77,
+      "avg_diameter": 14.51,
+      "avg_diameter_mm": 1.2285,
+      "bbox": {
+        "min_r": 18,
+        "max_r": 56,
+        "min_c": 1276,
+        "max_c": 1383
+      },
+      "number_of_branches": 0,
+      "diameter_median": 14.0,
+      "diameter_std": 8.6,
+      "diameter_median_mm": 1.1853,
+      "diameter_std_mm": 0.7279
+    },
+    "branches": []
+  },
+  "root_2": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 18,
+        "max_r": 73,
+        "min_c": 2188,
+        "max_c": 2212
+      },
+      "angle": 250.72,
+      "length": 57.04,
+      "length_mm": 4.8295,
+      "avg_diameter": 5.74,
+      "avg_diameter_mm": 0.486,
+      "diameter_method": 7,
+      "diameter_median": 6.0,
+      "diameter_std": 1.25,
+      "diameter_median_mm": 0.508,
+      "diameter_std_mm": 0.106
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 18,
+        "max_r": 73,
+        "min_c": 2188,
+        "max_c": 2212
+      },
+      "angle": 250.72,
+      "length": 57.04,
+      "length_mm": 4.8295,
+      "avg_diameter": 5.74,
+      "avg_diameter_mm": 0.486,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 6.0,
+      "diameter_std": 1.25,
+      "diameter_median_mm": 0.508,
+      "diameter_std_mm": 0.106
+    },
+    "branches": []
+  },
+  "root_3": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 18,
+        "max_r": 184,
+        "min_c": 2351,
+        "max_c": 2531
+      },
+      "angle": 358.13,
+      "length": 609.98,
+      "length_mm": 51.6454,
+      "avg_diameter": 14.39,
+      "avg_diameter_mm": 1.2184,
+      "diameter_method": 7,
+      "diameter_median": 12.65,
+      "diameter_std": 7.42,
+      "diameter_median_mm": 1.071,
+      "diameter_std_mm": 0.6284
+    },
+    "main_root": {
+      "id": 23,
+      "merged_from": [
+        2,
+        6,
+        10
+      ],
+      "length": 55.79898987322332,
+      "length_mm": 4.7243,
+      "angle": 345.39,
+      "avg_diameter": 20.68,
+      "avg_diameter_mm": 1.7509,
+      "bbox": {
+        "min_r": 18,
+        "max_r": 184,
+        "min_c": 2351,
+        "max_c": 2531
+      },
+      "number_of_branches": 3,
+      "diameter_median": 22.09,
+      "diameter_std": 9.28,
+      "diameter_median_mm": 1.8703,
+      "diameter_std_mm": 0.7858
+    },
+    "branches": [
+      {
+        "id": 21,
+        "merged_from": [
+          4,
+          5
+        ],
+        "length": 49.79898987322332,
+        "length_mm": 4.2163,
+        "angle": 351.57,
+        "avg_diameter": 12.08,
+        "avg_diameter_mm": 1.0228,
+        "bbox": {
+          "min_r": 18,
+          "max_r": 184,
+          "min_c": 2351,
+          "max_c": 2531
+        },
+        "comparison_angle": 6.18,
+        "insertion_angle": 24.77,
+        "diameter_median": 14.0,
+        "diameter_std": 4.47,
+        "diameter_median_mm": 1.1853,
+        "diameter_std_mm": 0.3782
+      },
+      {
+        "id": 25,
+        "merged_from": [
+          8,
+          12,
+          14
+        ],
+        "length": 52.31370849898475,
+        "length_mm": 4.4292,
+        "angle": 261.44,
+        "avg_diameter": 9.83,
+        "avg_diameter_mm": 0.8323,
+        "bbox": {
+          "min_r": 18,
+          "max_r": 184,
+          "min_c": 2351,
+          "max_c": 2531
+        },
+        "comparison_angle": 83.95,
+        "insertion_angle": 91.8,
+        "diameter_median": 10.0,
+        "diameter_std": 4.5,
+        "diameter_median_mm": 0.8467,
+        "diameter_std_mm": 0.3808
+      },
+      {
+        "id": 26,
+        "merged_from": [
+          15,
+          17,
+          18
+        ],
+        "length": 8.414213562373096,
+        "length_mm": 0.7124,
+        "angle": 185.81,
+        "avg_diameter": 10.99,
+        "avg_diameter_mm": 0.9305,
+        "bbox": {
+          "min_r": 18,
+          "max_r": 184,
+          "min_c": 2351,
+          "max_c": 2531
+        },
+        "comparison_angle": 159.58,
+        "insertion_angle": 14.59,
+        "diameter_median": 11.31,
+        "diameter_std": 2.22,
+        "diameter_median_mm": 0.9579,
+        "diameter_std_mm": 0.1878
+      }
+    ]
+  },
+  "root_4": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 45,
+        "max_r": 303,
+        "min_c": 1563,
+        "max_c": 2464
+      },
+      "angle": 341.3,
+      "length": 2498.63,
+      "length_mm": 211.5507,
+      "avg_diameter": 16.08,
+      "avg_diameter_mm": 1.3614,
+      "diameter_method": 7,
+      "diameter_median": 14.56,
+      "diameter_std": 7.86,
+      "diameter_median_mm": 1.2328,
+      "diameter_std_mm": 0.6657
+    },
+    "main_root": {
+      "id": 81,
+      "merged_from": [
+        24,
+        39
+      ],
+      "length": 28.31370849898476,
+      "length_mm": 2.3972,
+      "angle": 230.35,
+      "avg_diameter": 19.72,
+      "avg_diameter_mm": 1.6696,
+      "bbox": {
+        "min_r": 45,
+        "max_r": 303,
+        "min_c": 1563,
+        "max_c": 2464
+      },
+      "number_of_branches": 11,
+      "diameter_median": 20.0,
+      "diameter_std": 2.09,
+      "diameter_median_mm": 1.6933,
+      "diameter_std_mm": 0.1773
+    },
+    "branches": [
+      {
+        "id": 2,
+        "merged_from": [
+          2
+        ],
+        "length": 135.19595949289334,
+        "length_mm": 11.4466,
+        "angle": 333.76,
+        "avg_diameter": 11.75,
+        "avg_diameter_mm": 0.9948,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 103.41,
+        "insertion_angle": 98.11,
+        "diameter_median": 11.66,
+        "diameter_std": 3.6,
+        "diameter_median_mm": 0.9874,
+        "diameter_std_mm": 0.3051
+      },
+      {
+        "id": 15,
+        "merged_from": [
+          15
+        ],
+        "length": 72.55634918610404,
+        "length_mm": 6.1431,
+        "angle": 354.32,
+        "avg_diameter": 15.23,
+        "avg_diameter_mm": 1.2895,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 123.97,
+        "insertion_angle": 174.64,
+        "diameter_median": 14.14,
+        "diameter_std": 3.73,
+        "diameter_median_mm": 1.1974,
+        "diameter_std_mm": 0.3155
+      },
+      {
+        "id": 20,
+        "merged_from": [
+          20
+        ],
+        "length": 57.48528137423857,
+        "length_mm": 4.8671,
+        "angle": 0.27,
+        "avg_diameter": 17.53,
+        "avg_diameter_mm": 1.4842,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 129.92,
+        "insertion_angle": 176.28,
+        "diameter_median": 16.49,
+        "diameter_std": 2.46,
+        "diameter_median_mm": 1.3964,
+        "diameter_std_mm": 0.2084
+      },
+      {
+        "id": 51,
+        "merged_from": [
+          51
+        ],
+        "length": 85.38477631085024,
+        "length_mm": 7.2292,
+        "angle": 188.45,
+        "avg_diameter": 13.88,
+        "avg_diameter_mm": 1.1752,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 41.9,
+        "insertion_angle": 76.0,
+        "diameter_median": 13.42,
+        "diameter_std": 4.27,
+        "diameter_median_mm": 1.1359,
+        "diameter_std_mm": 0.3619
+      },
+      {
+        "id": 63,
+        "merged_from": [
+          5,
+          8
+        ],
+        "length": 60.4558441227157,
+        "length_mm": 5.1186,
+        "angle": 342.22,
+        "avg_diameter": 14.18,
+        "avg_diameter_mm": 1.2006,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 111.87,
+        "insertion_angle": 71.8,
+        "diameter_median": 16.49,
+        "diameter_std": 4.58,
+        "diameter_median_mm": 1.3964,
+        "diameter_std_mm": 0.3875
+      },
+      {
+        "id": 64,
+        "merged_from": [
+          10,
+          30
+        ],
+        "length": 52.970562748477136,
+        "length_mm": 4.4848,
+        "angle": 273.99,
+        "avg_diameter": 14.63,
+        "avg_diameter_mm": 1.2387,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 43.64,
+        "insertion_angle": 79.11,
+        "diameter_median": 6.0,
+        "diameter_std": 13.31,
+        "diameter_median_mm": 0.508,
+        "diameter_std_mm": 1.1272
+      },
+      {
+        "id": 67,
+        "merged_from": [
+          14,
+          32
+        ],
+        "length": 57.2842712474619,
+        "length_mm": 4.8501,
+        "angle": 208.97,
+        "avg_diameter": 14.42,
+        "avg_diameter_mm": 1.2209,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 21.38,
+        "insertion_angle": 9.43,
+        "diameter_median": 14.14,
+        "diameter_std": 3.51,
+        "diameter_median_mm": 1.1974,
+        "diameter_std_mm": 0.2975
+      },
+      {
+        "id": 71,
+        "merged_from": [
+          48,
+          55
+        ],
+        "length": 41.62741699796952,
+        "length_mm": 3.5245,
+        "angle": 220.95,
+        "avg_diameter": 19.16,
+        "avg_diameter_mm": 1.6222,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 9.4,
+        "insertion_angle": 114.77,
+        "diameter_median": 20.0,
+        "diameter_std": 9.67,
+        "diameter_median_mm": 1.6933,
+        "diameter_std_mm": 0.8188
+      },
+      {
+        "id": 72,
+        "merged_from": [
+          3,
+          4,
+          6,
+          13
+        ],
+        "length": 15.142135623730955,
+        "length_mm": 1.282,
+        "angle": 219.98,
+        "avg_diameter": 13.27,
+        "avg_diameter_mm": 1.1235,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 10.37,
+        "insertion_angle": 16.75,
+        "diameter_median": 11.66,
+        "diameter_std": 5.17,
+        "diameter_median_mm": 0.9874,
+        "diameter_std_mm": 0.4378
+      },
+      {
+        "id": 74,
+        "merged_from": [
+          17,
+          28,
+          29
+        ],
+        "length": 55.4558441227157,
+        "length_mm": 4.6953,
+        "angle": 189.2,
+        "avg_diameter": 19.17,
+        "avg_diameter_mm": 1.6231,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 41.15,
+        "insertion_angle": 144.13,
+        "diameter_median": 16.0,
+        "diameter_std": 9.0,
+        "diameter_median_mm": 1.3547,
+        "diameter_std_mm": 0.7623
+      },
+      {
+        "id": 80,
+        "merged_from": [
+          38,
+          43,
+          33,
+          44,
+          34,
+          35,
+          36,
+          42,
+          49,
+          53,
+          40
+        ],
+        "length": 24.313708498984763,
+        "length_mm": 2.0586,
+        "angle": 198.19,
+        "avg_diameter": 19.33,
+        "avg_diameter_mm": 1.6366,
+        "bbox": {
+          "min_r": 45,
+          "max_r": 303,
+          "min_c": 1563,
+          "max_c": 2464
+        },
+        "comparison_angle": 32.16,
+        "insertion_angle": 160.62,
+        "diameter_median": 16.0,
+        "diameter_std": 10.15,
+        "diameter_median_mm": 1.3547,
+        "diameter_std_mm": 0.8593
+      }
+    ]
+  },
+  "root_5": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 55,
+        "max_r": 130,
+        "min_c": 1464,
+        "max_c": 1673
+      },
+      "angle": 188.68,
+      "length": 293.31,
+      "length_mm": 24.8335,
+      "avg_diameter": 12.54,
+      "avg_diameter_mm": 1.0617,
+      "diameter_method": 7,
+      "diameter_median": 12.65,
+      "diameter_std": 4.66,
+      "diameter_median_mm": 1.071,
+      "diameter_std_mm": 0.3942
+    },
+    "main_root": {
+      "id": 11,
+      "merged_from": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "length": 12.65685424949238,
+      "length_mm": 1.0716,
+      "angle": 222.82,
+      "avg_diameter": 13.13,
+      "avg_diameter_mm": 1.1117,
+      "bbox": {
+        "min_r": 55,
+        "max_r": 130,
+        "min_c": 1464,
+        "max_c": 1673
+      },
+      "number_of_branches": 0,
+      "diameter_median": 14.0,
+      "diameter_std": 4.02,
+      "diameter_median_mm": 1.1853,
+      "diameter_std_mm": 0.3399
+    },
+    "branches": []
+  },
+  "root_6": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 81,
+        "max_r": 100,
+        "min_c": 1068,
+        "max_c": 1147
+      },
+      "angle": 354.27,
+      "length": 74.14,
+      "length_mm": 6.2774,
+      "avg_diameter": 9.5,
+      "avg_diameter_mm": 0.8043,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 2.31,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.1952
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 81,
+        "max_r": 100,
+        "min_c": 1068,
+        "max_c": 1147
+      },
+      "angle": 354.27,
+      "length": 74.14,
+      "length_mm": 6.2774,
+      "avg_diameter": 9.5,
+      "avg_diameter_mm": 0.8043,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 10.0,
+      "diameter_std": 2.31,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.1952
+    },
+    "branches": []
+  },
+  "root_7": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 123,
+        "max_r": 380,
+        "min_c": 378,
+        "max_c": 546
+      },
+      "angle": 235.82,
+      "length": 327.96,
+      "length_mm": 27.7673,
+      "avg_diameter": 24.57,
+      "avg_diameter_mm": 2.0803,
+      "diameter_method": 7,
+      "diameter_median": 26.08,
+      "diameter_std": 5.31,
+      "diameter_median_mm": 2.2078,
+      "diameter_std_mm": 0.4493
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        3
+      ],
+      "length": 118.58073580374358,
+      "length_mm": 10.0398,
+      "angle": 227.78,
+      "avg_diameter": 25.58,
+      "avg_diameter_mm": 2.1658,
+      "bbox": {
+        "min_r": 123,
+        "max_r": 380,
+        "min_c": 378,
+        "max_c": 546
+      },
+      "number_of_branches": 0,
+      "diameter_median": 26.83,
+      "diameter_std": 3.21,
+      "diameter_median_mm": 2.2718,
+      "diameter_std_mm": 0.2718
+    },
+    "branches": []
+  },
+  "root_8": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 210,
+        "max_r": 277,
+        "min_c": 583,
+        "max_c": 611
+      },
+      "angle": 250.95,
+      "length": 64.28,
+      "length_mm": 5.4427,
+      "avg_diameter": 8.7,
+      "avg_diameter_mm": 0.7366,
+      "diameter_method": 7,
+      "diameter_median": 8.25,
+      "diameter_std": 2.11,
+      "diameter_median_mm": 0.6982,
+      "diameter_std_mm": 0.1791
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 210,
+        "max_r": 277,
+        "min_c": 583,
+        "max_c": 611
+      },
+      "angle": 250.95,
+      "length": 64.28,
+      "length_mm": 5.4427,
+      "avg_diameter": 8.7,
+      "avg_diameter_mm": 0.7366,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 8.25,
+      "diameter_std": 2.11,
+      "diameter_median_mm": 0.6982,
+      "diameter_std_mm": 0.1791
+    },
+    "branches": []
+  },
+  "root_9": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 225,
+        "max_r": 290,
+        "min_c": 1696,
+        "max_c": 1748
+      },
+      "angle": 307.38,
+      "length": 75.57,
+      "length_mm": 6.3981,
+      "avg_diameter": 12.88,
+      "avg_diameter_mm": 1.0905,
+      "diameter_method": 7,
+      "diameter_median": 13.78,
+      "diameter_std": 2.6,
+      "diameter_median_mm": 1.1666,
+      "diameter_std_mm": 0.2202
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 225,
+        "max_r": 290,
+        "min_c": 1696,
+        "max_c": 1748
+      },
+      "angle": 307.38,
+      "length": 75.57,
+      "length_mm": 6.3981,
+      "avg_diameter": 12.88,
+      "avg_diameter_mm": 1.0905,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 13.78,
+      "diameter_std": 2.6,
+      "diameter_median_mm": 1.1666,
+      "diameter_std_mm": 0.2202
+    },
+    "branches": []
+  },
+  "root_10": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 233,
+        "max_r": 313,
+        "min_c": 1654,
+        "max_c": 1683
+      },
+      "angle": 259.58,
+      "length": 80.28,
+      "length_mm": 6.7974,
+      "avg_diameter": 10.03,
+      "avg_diameter_mm": 0.8492,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 2.66,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.2252
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 233,
+        "max_r": 313,
+        "min_c": 1654,
+        "max_c": 1683
+      },
+      "angle": 259.58,
+      "length": 80.28,
+      "length_mm": 6.7974,
+      "avg_diameter": 10.03,
+      "avg_diameter_mm": 0.8492,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 10.0,
+      "diameter_std": 2.66,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.2252
+    },
+    "branches": []
+  },
+  "root_11": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 264,
+        "max_r": 378,
+        "min_c": 1610,
+        "max_c": 1911
+      },
+      "angle": 196.09,
+      "length": 343.49,
+      "length_mm": 29.0824,
+      "avg_diameter": 22.58,
+      "avg_diameter_mm": 1.9118,
+      "diameter_method": 7,
+      "diameter_median": 20.25,
+      "diameter_std": 8.94,
+      "diameter_median_mm": 1.7143,
+      "diameter_std_mm": 0.7566
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        3
+      ],
+      "length": 90.31370849898477,
+      "length_mm": 7.6466,
+      "angle": 183.62,
+      "avg_diameter": 22.88,
+      "avg_diameter_mm": 1.9372,
+      "bbox": {
+        "min_r": 264,
+        "max_r": 378,
+        "min_c": 1610,
+        "max_c": 1911
+      },
+      "number_of_branches": 0,
+      "diameter_median": 20.88,
+      "diameter_std": 8.91,
+      "diameter_median_mm": 1.7679,
+      "diameter_std_mm": 0.7542
+    },
+    "branches": []
+  },
+  "root_12": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 277,
+        "max_r": 309,
+        "min_c": 2141,
+        "max_c": 2243
+      },
+      "angle": 353.48,
+      "length": 114.94,
+      "length_mm": 9.7317,
+      "avg_diameter": 10.16,
+      "avg_diameter_mm": 0.8602,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 3.43,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.2906
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        3
+      ],
+      "length": 32.14213562373095,
+      "length_mm": 2.7214,
+      "angle": 341.29,
+      "avg_diameter": 9.77,
+      "avg_diameter_mm": 0.8272,
+      "bbox": {
+        "min_r": 277,
+        "max_r": 309,
+        "min_c": 2141,
+        "max_c": 2243
+      },
+      "number_of_branches": 0,
+      "diameter_median": 10.0,
+      "diameter_std": 3.08,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.2608
+    },
+    "branches": []
+  },
+  "root_13": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 302,
+        "max_r": 476,
+        "min_c": 587,
+        "max_c": 922
+      },
+      "angle": 195.43,
+      "length": 438.24,
+      "length_mm": 37.1047,
+      "avg_diameter": 21.3,
+      "avg_diameter_mm": 1.8034,
+      "diameter_method": 7,
+      "diameter_median": 21.54,
+      "diameter_std": 5.3,
+      "diameter_median_mm": 1.8238,
+      "diameter_std_mm": 0.4488
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        4
+      ],
+      "length": 308.5340546095176,
+      "length_mm": 26.1225,
+      "angle": 203.44,
+      "avg_diameter": 21.47,
+      "avg_diameter_mm": 1.8178,
+      "bbox": {
+        "min_r": 302,
+        "max_r": 476,
+        "min_c": 587,
+        "max_c": 922
+      },
+      "number_of_branches": 0,
+      "diameter_median": 21.54,
+      "diameter_std": 4.13,
+      "diameter_median_mm": 1.8238,
+      "diameter_std_mm": 0.3493
+    },
+    "branches": []
+  },
+  "root_14": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 323,
+        "max_r": 857,
+        "min_c": 156,
+        "max_c": 540
+      },
+      "angle": 225.75,
+      "length": 1450.37,
+      "length_mm": 122.7979,
+      "avg_diameter": 19.04,
+      "avg_diameter_mm": 1.6121,
+      "diameter_method": 7,
+      "diameter_median": 18.65,
+      "diameter_std": 7.59,
+      "diameter_median_mm": 1.5793,
+      "diameter_std_mm": 0.6425
+    },
+    "main_root": {
+      "id": 59,
+      "merged_from": [
+        38,
+        42,
+        43,
+        44,
+        46
+      ],
+      "length": 37.04163056034261,
+      "length_mm": 3.1362,
+      "angle": 219.07,
+      "avg_diameter": 23.47,
+      "avg_diameter_mm": 1.9871,
+      "bbox": {
+        "min_r": 323,
+        "max_r": 857,
+        "min_c": 156,
+        "max_c": 540
+      },
+      "number_of_branches": 2,
+      "diameter_median": 24.17,
+      "diameter_std": 3.63,
+      "diameter_median_mm": 2.0461,
+      "diameter_std_mm": 0.3075
+    },
+    "branches": [
+      {
+        "id": 61,
+        "merged_from": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          18
+        ],
+        "length": 211.04877323527904,
+        "length_mm": 17.8688,
+        "angle": 222.62,
+        "avg_diameter": 16.02,
+        "avg_diameter_mm": 1.3564,
+        "bbox": {
+          "min_r": 323,
+          "max_r": 857,
+          "min_c": 156,
+          "max_c": 540
+        },
+        "comparison_angle": 3.55,
+        "insertion_angle": 169.44,
+        "diameter_median": 15.62,
+        "diameter_std": 3.2,
+        "diameter_median_mm": 1.3225,
+        "diameter_std_mm": 0.2709
+      },
+      {
+        "id": 63,
+        "merged_from": [
+          9,
+          17,
+          19,
+          23,
+          30,
+          35
+        ],
+        "length": 15.142135623730955,
+        "length_mm": 1.282,
+        "angle": 221.96,
+        "avg_diameter": 22.79,
+        "avg_diameter_mm": 1.9296,
+        "bbox": {
+          "min_r": 323,
+          "max_r": 857,
+          "min_c": 156,
+          "max_c": 540
+        },
+        "comparison_angle": 2.89,
+        "insertion_angle": 160.02,
+        "diameter_median": 20.25,
+        "diameter_std": 8.5,
+        "diameter_median_mm": 1.7143,
+        "diameter_std_mm": 0.7194
+      }
+    ]
+  },
+  "root_15": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 338,
+        "max_r": 424,
+        "min_c": 1302,
+        "max_c": 1479
+      },
+      "angle": 229.9,
+      "length": 288.18,
+      "length_mm": 24.3991,
+      "avg_diameter": 12.31,
+      "avg_diameter_mm": 1.0422,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 6.78,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.5742
+    },
+    "main_root": {
+      "id": 11,
+      "merged_from": [
+        8,
+        9
+      ],
+      "length": 17.242640687119284,
+      "length_mm": 1.4599,
+      "angle": 183.2,
+      "avg_diameter": 13.95,
+      "avg_diameter_mm": 1.1811,
+      "bbox": {
+        "min_r": 338,
+        "max_r": 424,
+        "min_c": 1302,
+        "max_c": 1479
+      },
+      "number_of_branches": 1,
+      "diameter_median": 13.03,
+      "diameter_std": 7.86,
+      "diameter_median_mm": 1.1034,
+      "diameter_std_mm": 0.6657
+    },
+    "branches": [
+      {
+        "id": 12,
+        "merged_from": [
+          3,
+          5,
+          7
+        ],
+        "length": 25.556349186104047,
+        "length_mm": 2.1638,
+        "angle": 346.2,
+        "avg_diameter": 9.97,
+        "avg_diameter_mm": 0.8441,
+        "bbox": {
+          "min_r": 338,
+          "max_r": 424,
+          "min_c": 1302,
+          "max_c": 1479
+        },
+        "comparison_angle": 163.0,
+        "insertion_angle": 77.37,
+        "diameter_median": 10.0,
+        "diameter_std": 3.25,
+        "diameter_median_mm": 0.8467,
+        "diameter_std_mm": 0.2753
+      }
+    ]
+  },
+  "root_16": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 370,
+        "max_r": 473,
+        "min_c": 982,
+        "max_c": 1270
+      },
+      "angle": 184.85,
+      "length": 374.46,
+      "length_mm": 31.7045,
+      "avg_diameter": 12.89,
+      "avg_diameter_mm": 1.0914,
+      "diameter_method": 7,
+      "diameter_median": 12.65,
+      "diameter_std": 4.07,
+      "diameter_median_mm": 1.071,
+      "diameter_std_mm": 0.3445
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        4
+      ],
+      "length": 230.0538238691624,
+      "length_mm": 19.4779,
+      "angle": 190.9,
+      "avg_diameter": 12.83,
+      "avg_diameter_mm": 1.0863,
+      "bbox": {
+        "min_r": 370,
+        "max_r": 473,
+        "min_c": 982,
+        "max_c": 1270
+      },
+      "number_of_branches": 0,
+      "diameter_median": 12.65,
+      "diameter_std": 4.19,
+      "diameter_median_mm": 1.071,
+      "diameter_std_mm": 0.355
+    },
+    "branches": []
+  },
+  "root_17": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 378,
+        "max_r": 423,
+        "min_c": 1502,
+        "max_c": 1556
+      },
+      "angle": 344.56,
+      "length": 78.01,
+      "length_mm": 6.605,
+      "avg_diameter": 9.5,
+      "avg_diameter_mm": 0.8043,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 4.42,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.3744
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 378,
+        "max_r": 423,
+        "min_c": 1502,
+        "max_c": 1556
+      },
+      "angle": 344.56,
+      "length": 78.01,
+      "length_mm": 6.605,
+      "avg_diameter": 9.5,
+      "avg_diameter_mm": 0.8043,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 10.0,
+      "diameter_std": 4.42,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.3744
+    },
+    "branches": []
+  },
+  "root_18": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 389,
+        "max_r": 436,
+        "min_c": 1532,
+        "max_c": 1602
+      },
+      "angle": 211.2,
+      "length": 75.67,
+      "length_mm": 6.4066,
+      "avg_diameter": 9.01,
+      "avg_diameter_mm": 0.7628,
+      "diameter_method": 7,
+      "diameter_median": 8.94,
+      "diameter_std": 1.66,
+      "diameter_median_mm": 0.7573,
+      "diameter_std_mm": 0.1401
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 389,
+        "max_r": 436,
+        "min_c": 1532,
+        "max_c": 1602
+      },
+      "angle": 211.2,
+      "length": 75.67,
+      "length_mm": 6.4066,
+      "avg_diameter": 9.01,
+      "avg_diameter_mm": 0.7628,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 8.94,
+      "diameter_std": 1.66,
+      "diameter_median_mm": 0.7573,
+      "diameter_std_mm": 0.1401
+    },
+    "branches": []
+  },
+  "root_19": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 395,
+        "max_r": 439,
+        "min_c": 2255,
+        "max_c": 2317
+      },
+      "angle": 211.15,
+      "length": 67.08,
+      "length_mm": 5.6797,
+      "avg_diameter": 10.54,
+      "avg_diameter_mm": 0.8924,
+      "diameter_method": 7,
+      "diameter_median": 10.77,
+      "diameter_std": 2.11,
+      "diameter_median_mm": 0.9119,
+      "diameter_std_mm": 0.179
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 395,
+        "max_r": 439,
+        "min_c": 2255,
+        "max_c": 2317
+      },
+      "angle": 211.15,
+      "length": 67.08,
+      "length_mm": 5.6797,
+      "avg_diameter": 10.54,
+      "avg_diameter_mm": 0.8924,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 10.77,
+      "diameter_std": 2.11,
+      "diameter_median_mm": 0.9119,
+      "diameter_std_mm": 0.179
+    },
+    "branches": []
+  },
+  "root_20": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 422,
+        "max_r": 446,
+        "min_c": 2085,
+        "max_c": 2146
+      },
+      "angle": 345.05,
+      "length": 55.8,
+      "length_mm": 4.7243,
+      "avg_diameter": 11.75,
+      "avg_diameter_mm": 0.9948,
+      "diameter_method": 7,
+      "diameter_median": 12.0,
+      "diameter_std": 2.25,
+      "diameter_median_mm": 1.016,
+      "diameter_std_mm": 0.1909
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 422,
+        "max_r": 446,
+        "min_c": 2085,
+        "max_c": 2146
+      },
+      "angle": 345.05,
+      "length": 55.8,
+      "length_mm": 4.7243,
+      "avg_diameter": 11.75,
+      "avg_diameter_mm": 0.9948,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 12.0,
+      "diameter_std": 2.25,
+      "diameter_median_mm": 1.016,
+      "diameter_std_mm": 0.1909
+    },
+    "branches": []
+  },
+  "root_21": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 426,
+        "max_r": 532,
+        "min_c": 1334,
+        "max_c": 1470
+      },
+      "angle": 194.45,
+      "length": 356.59,
+      "length_mm": 30.1915,
+      "avg_diameter": 10.51,
+      "avg_diameter_mm": 0.8898,
+      "diameter_method": 7,
+      "diameter_median": 10.77,
+      "diameter_std": 4.37,
+      "diameter_median_mm": 0.9119,
+      "diameter_std_mm": 0.3698
+    },
+    "main_root": {
+      "id": 18,
+      "merged_from": [
+        7,
+        10,
+        12,
+        14
+      ],
+      "length": 19.65685424949238,
+      "length_mm": 1.6643,
+      "angle": 282.06,
+      "avg_diameter": 12.39,
+      "avg_diameter_mm": 1.049,
+      "bbox": {
+        "min_r": 426,
+        "max_r": 532,
+        "min_c": 1334,
+        "max_c": 1470
+      },
+      "number_of_branches": 2,
+      "diameter_median": 14.0,
+      "diameter_std": 3.43,
+      "diameter_median_mm": 1.1853,
+      "diameter_std_mm": 0.2905
+    },
+    "branches": [
+      {
+        "id": 11,
+        "merged_from": [
+          11
+        ],
+        "length": 57.284271247461895,
+        "length_mm": 4.8501,
+        "angle": 344.01,
+        "avg_diameter": 6.95,
+        "avg_diameter_mm": 0.5884,
+        "bbox": {
+          "min_r": 426,
+          "max_r": 532,
+          "min_c": 1334,
+          "max_c": 1470
+        },
+        "comparison_angle": 61.95,
+        "insertion_angle": 86.44,
+        "diameter_median": 6.32,
+        "diameter_std": 2.7,
+        "diameter_median_mm": 0.5355,
+        "diameter_std_mm": 0.2283
+      },
+      {
+        "id": 15,
+        "merged_from": [
+          4,
+          8
+        ],
+        "length": 58.04163056034261,
+        "length_mm": 4.9142,
+        "angle": 197.09,
+        "avg_diameter": 10.36,
+        "avg_diameter_mm": 0.8771,
+        "bbox": {
+          "min_r": 426,
+          "max_r": 532,
+          "min_c": 1334,
+          "max_c": 1470
+        },
+        "comparison_angle": 84.97,
+        "insertion_angle": 92.26,
+        "diameter_median": 10.0,
+        "diameter_std": 3.13,
+        "diameter_median_mm": 0.8467,
+        "diameter_std_mm": 0.265
+      }
+    ]
+  },
+  "root_22": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 438,
+        "max_r": 681,
+        "min_c": 1061,
+        "max_c": 1336
+      },
+      "angle": 206.59,
+      "length": 853.26,
+      "length_mm": 72.2426,
+      "avg_diameter": 15.72,
+      "avg_diameter_mm": 1.331,
+      "diameter_method": 7,
+      "diameter_median": 16.0,
+      "diameter_std": 4.56,
+      "diameter_median_mm": 1.3547,
+      "diameter_std_mm": 0.3864
+    },
+    "main_root": {
+      "id": 20,
+      "merged_from": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "length": 20.485281374238568,
+      "length_mm": 1.7344,
+      "angle": 197.78,
+      "avg_diameter": 17.66,
+      "avg_diameter_mm": 1.4952,
+      "bbox": {
+        "min_r": 438,
+        "max_r": 681,
+        "min_c": 1061,
+        "max_c": 1336
+      },
+      "number_of_branches": 4,
+      "diameter_median": 16.49,
+      "diameter_std": 2.58,
+      "diameter_median_mm": 1.3964,
+      "diameter_std_mm": 0.2186
+    },
+    "branches": [
+      {
+        "id": 11,
+        "merged_from": [
+          11
+        ],
+        "length": 121.65180361560905,
+        "length_mm": 10.2999,
+        "angle": 219.79,
+        "avg_diameter": 15.06,
+        "avg_diameter_mm": 1.2751,
+        "bbox": {
+          "min_r": 438,
+          "max_r": 681,
+          "min_c": 1061,
+          "max_c": 1336
+        },
+        "comparison_angle": 22.01,
+        "insertion_angle": 28.86,
+        "diameter_median": 15.62,
+        "diameter_std": 2.67,
+        "diameter_median_mm": 1.3225,
+        "diameter_std_mm": 0.2257
+      },
+      {
+        "id": 15,
+        "merged_from": [
+          15
+        ],
+        "length": 129.61017305526644,
+        "length_mm": 10.9737,
+        "angle": 238.05,
+        "avg_diameter": 13.31,
+        "avg_diameter_mm": 1.1269,
+        "bbox": {
+          "min_r": 438,
+          "max_r": 681,
+          "min_c": 1061,
+          "max_c": 1336
+        },
+        "comparison_angle": 40.27,
+        "insertion_angle": 70.64,
+        "diameter_median": 12.81,
+        "diameter_std": 2.95,
+        "diameter_median_mm": 1.0843,
+        "diameter_std_mm": 0.2499
+      },
+      {
+        "id": 21,
+        "merged_from": [
+          4,
+          9
+        ],
+        "length": 13.485281374238571,
+        "length_mm": 1.1418,
+        "angle": 295.51,
+        "avg_diameter": 14.25,
+        "avg_diameter_mm": 1.2065,
+        "bbox": {
+          "min_r": 438,
+          "max_r": 681,
+          "min_c": 1061,
+          "max_c": 1336
+        },
+        "comparison_angle": 97.73,
+        "insertion_angle": 73.49,
+        "diameter_median": 12.65,
+        "diameter_std": 4.22,
+        "diameter_median_mm": 1.071,
+        "diameter_std_mm": 0.3575
+      },
+      {
+        "id": 24,
+        "merged_from": [
+          12,
+          13,
+          14,
+          17
+        ],
+        "length": 65.94112549695427,
+        "length_mm": 5.583,
+        "angle": 202.46,
+        "avg_diameter": 17.16,
+        "avg_diameter_mm": 1.4529,
+        "bbox": {
+          "min_r": 438,
+          "max_r": 681,
+          "min_c": 1061,
+          "max_c": 1336
+        },
+        "comparison_angle": 4.68,
+        "insertion_angle": 172.8,
+        "diameter_median": 17.89,
+        "diameter_std": 4.67,
+        "diameter_median_mm": 1.5146,
+        "diameter_std_mm": 0.3958
+      }
+    ]
+  },
+  "root_23": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 492,
+        "max_r": 551,
+        "min_c": 1883,
+        "max_c": 1919
+      },
+      "angle": 296.89,
+      "length": 63.6,
+      "length_mm": 5.3846,
+      "avg_diameter": 4.93,
+      "avg_diameter_mm": 0.4174,
+      "diameter_method": 7,
+      "diameter_median": 4.47,
+      "diameter_std": 0.69,
+      "diameter_median_mm": 0.3786,
+      "diameter_std_mm": 0.0586
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 492,
+        "max_r": 551,
+        "min_c": 1883,
+        "max_c": 1919
+      },
+      "angle": 296.89,
+      "length": 63.6,
+      "length_mm": 5.3846,
+      "avg_diameter": 4.93,
+      "avg_diameter_mm": 0.4174,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 4.47,
+      "diameter_std": 0.69,
+      "diameter_median_mm": 0.3786,
+      "diameter_std_mm": 0.0586
+    },
+    "branches": []
+  },
+  "root_24": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 494,
+        "max_r": 615,
+        "min_c": 2435,
+        "max_c": 2531
+      },
+      "angle": 245.18,
+      "length": 254.38,
+      "length_mm": 21.5375,
+      "avg_diameter": 9.31,
+      "avg_diameter_mm": 0.7882,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 3.44,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.2909
+    },
+    "main_root": {
+      "id": 2,
+      "merged_from": [
+        2
+      ],
+      "length": 82.18376618407356,
+      "length_mm": 6.9582,
+      "angle": 249.72,
+      "avg_diameter": 11.24,
+      "avg_diameter_mm": 0.9517,
+      "bbox": {
+        "min_r": 494,
+        "max_r": 615,
+        "min_c": 2435,
+        "max_c": 2531
+      },
+      "number_of_branches": 1,
+      "diameter_median": 11.66,
+      "diameter_std": 2.12,
+      "diameter_median_mm": 0.9874,
+      "diameter_std_mm": 0.1799
+    },
+    "branches": [
+      {
+        "id": 5,
+        "merged_from": [
+          5
+        ],
+        "length": 73.94112549695429,
+        "length_mm": 6.2603,
+        "angle": 344.98,
+        "avg_diameter": 9.94,
+        "avg_diameter_mm": 0.8416,
+        "bbox": {
+          "min_r": 494,
+          "max_r": 615,
+          "min_c": 2435,
+          "max_c": 2531
+        },
+        "comparison_angle": 95.26,
+        "insertion_angle": 77.44,
+        "diameter_median": 10.0,
+        "diameter_std": 1.96,
+        "diameter_median_mm": 0.8467,
+        "diameter_std_mm": 0.1662
+      }
+    ]
+  },
+  "root_25": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 499,
+        "max_r": 681,
+        "min_c": 1649,
+        "max_c": 1940
+      },
+      "angle": 318.31,
+      "length": 445.97,
+      "length_mm": 37.7586,
+      "avg_diameter": 11.9,
+      "avg_diameter_mm": 1.0075,
+      "diameter_method": 7,
+      "diameter_median": 11.66,
+      "diameter_std": 2.49,
+      "diameter_median_mm": 0.9874,
+      "diameter_std_mm": 0.2106
+    },
+    "main_root": {
+      "id": 4,
+      "merged_from": [
+        4
+      ],
+      "length": 224.19090885901,
+      "length_mm": 18.9815,
+      "angle": 223.24,
+      "avg_diameter": 12.39,
+      "avg_diameter_mm": 1.049,
+      "bbox": {
+        "min_r": 499,
+        "max_r": 681,
+        "min_c": 1649,
+        "max_c": 1940
+      },
+      "number_of_branches": 1,
+      "diameter_median": 12.65,
+      "diameter_std": 1.88,
+      "diameter_median_mm": 1.071,
+      "diameter_std_mm": 0.1594
+    },
+    "branches": [
+      {
+        "id": 5,
+        "merged_from": [
+          2,
+          3
+        ],
+        "length": 37.870057685088796,
+        "length_mm": 3.2063,
+        "angle": 305.36,
+        "avg_diameter": 11.19,
+        "avg_diameter_mm": 0.9474,
+        "bbox": {
+          "min_r": 499,
+          "max_r": 681,
+          "min_c": 1649,
+          "max_c": 1940
+        },
+        "comparison_angle": 82.12,
+        "insertion_angle": 99.44,
+        "diameter_median": 11.31,
+        "diameter_std": 2.68,
+        "diameter_median_mm": 0.9579,
+        "diameter_std_mm": 0.2268
+      }
+    ]
+  },
+  "root_26": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 508,
+        "max_r": 604,
+        "min_c": 1410,
+        "max_c": 1732
+      },
+      "angle": 322.85,
+      "length": 438.45,
+      "length_mm": 37.1222,
+      "avg_diameter": 16.61,
+      "avg_diameter_mm": 1.4063,
+      "diameter_method": 7,
+      "diameter_median": 17.09,
+      "diameter_std": 3.92,
+      "diameter_median_mm": 1.4468,
+      "diameter_std_mm": 0.3321
+    },
+    "main_root": {
+      "id": 11,
+      "merged_from": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "length": 240.63961030678928,
+      "length_mm": 20.3742,
+      "angle": 190.66,
+      "avg_diameter": 17.35,
+      "avg_diameter_mm": 1.469,
+      "bbox": {
+        "min_r": 508,
+        "max_r": 604,
+        "min_c": 1410,
+        "max_c": 1732
+      },
+      "number_of_branches": 1,
+      "diameter_median": 18.0,
+      "diameter_std": 3.61,
+      "diameter_median_mm": 1.524,
+      "diameter_std_mm": 0.3053
+    },
+    "branches": [
+      {
+        "id": 2,
+        "merged_from": [
+          2
+        ],
+        "length": 69.31370849898475,
+        "length_mm": 5.8686,
+        "angle": 267.08,
+        "avg_diameter": 13.12,
+        "avg_diameter_mm": 1.1108,
+        "bbox": {
+          "min_r": 508,
+          "max_r": 604,
+          "min_c": 1410,
+          "max_c": 1732
+        },
+        "comparison_angle": 76.42,
+        "insertion_angle": 83.14,
+        "diameter_median": 12.0,
+        "diameter_std": 2.47,
+        "diameter_median_mm": 1.016,
+        "diameter_std_mm": 0.2087
+      }
+    ]
+  },
+  "root_27": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 526,
+        "max_r": 595,
+        "min_c": 2134,
+        "max_c": 2334
+      },
+      "angle": 346.97,
+      "length": 322.15,
+      "length_mm": 27.2753,
+      "avg_diameter": 11.62,
+      "avg_diameter_mm": 0.9838,
+      "diameter_method": 7,
+      "diameter_median": 12.0,
+      "diameter_std": 3.9,
+      "diameter_median_mm": 1.016,
+      "diameter_std_mm": 0.3301
+    },
+    "main_root": {
+      "id": 11,
+      "merged_from": [
+        2,
+        3,
+        5,
+        8
+      ],
+      "length": 26.31370849898476,
+      "length_mm": 2.2279,
+      "angle": 342.6,
+      "avg_diameter": 12.34,
+      "avg_diameter_mm": 1.0448,
+      "bbox": {
+        "min_r": 526,
+        "max_r": 595,
+        "min_c": 2134,
+        "max_c": 2334
+      },
+      "number_of_branches": 1,
+      "diameter_median": 14.0,
+      "diameter_std": 3.77,
+      "diameter_median_mm": 1.1853,
+      "diameter_std_mm": 0.3195
+    },
+    "branches": [
+      {
+        "id": 4,
+        "merged_from": [
+          4
+        ],
+        "length": 63.84062043356594,
+        "length_mm": 5.4052,
+        "angle": 301.28,
+        "avg_diameter": 9.37,
+        "avg_diameter_mm": 0.7933,
+        "bbox": {
+          "min_r": 526,
+          "max_r": 595,
+          "min_c": 2134,
+          "max_c": 2334
+        },
+        "comparison_angle": 41.32,
+        "insertion_angle": 63.44,
+        "diameter_median": 10.0,
+        "diameter_std": 2.16,
+        "diameter_median_mm": 0.8467,
+        "diameter_std_mm": 0.1826
+      }
+    ]
+  },
+  "root_28": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 652,
+        "max_r": 718,
+        "min_c": 912,
+        "max_c": 979
+      },
+      "angle": 224.06,
+      "length": 84.54,
+      "length_mm": 7.1576,
+      "avg_diameter": 13.09,
+      "avg_diameter_mm": 1.1083,
+      "diameter_method": 7,
+      "diameter_median": 14.14,
+      "diameter_std": 2.6,
+      "diameter_median_mm": 1.1974,
+      "diameter_std_mm": 0.2205
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 652,
+        "max_r": 718,
+        "min_c": 912,
+        "max_c": 979
+      },
+      "angle": 224.06,
+      "length": 84.54,
+      "length_mm": 7.1576,
+      "avg_diameter": 13.09,
+      "avg_diameter_mm": 1.1083,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 14.14,
+      "diameter_std": 2.6,
+      "diameter_median_mm": 1.1974,
+      "diameter_std_mm": 0.2205
+    },
+    "branches": []
+  },
+  "root_29": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 706,
+        "max_r": 741,
+        "min_c": 1105,
+        "max_c": 1181
+      },
+      "angle": 199.83,
+      "length": 98.5,
+      "length_mm": 8.3395,
+      "avg_diameter": 10.72,
+      "avg_diameter_mm": 0.9076,
+      "diameter_method": 7,
+      "diameter_median": 10.77,
+      "diameter_std": 3.04,
+      "diameter_median_mm": 0.9119,
+      "diameter_std_mm": 0.2577
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        3
+      ],
+      "length": 27.38477631085024,
+      "length_mm": 2.3186,
+      "angle": 209.43,
+      "avg_diameter": 11.8,
+      "avg_diameter_mm": 0.9991,
+      "bbox": {
+        "min_r": 706,
+        "max_r": 741,
+        "min_c": 1105,
+        "max_c": 1181
+      },
+      "number_of_branches": 0,
+      "diameter_median": 11.66,
+      "diameter_std": 2.04,
+      "diameter_median_mm": 0.9874,
+      "diameter_std_mm": 0.1729
+    },
+    "branches": []
+  },
+  "root_30": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 751,
+        "max_r": 887,
+        "min_c": 83,
+        "max_c": 142
+      },
+      "angle": 249.42,
+      "length": 144.3,
+      "length_mm": 12.2171,
+      "avg_diameter": 13.6,
+      "avg_diameter_mm": 1.1515,
+      "diameter_method": 7,
+      "diameter_median": 14.14,
+      "diameter_std": 2.61,
+      "diameter_median_mm": 1.1974,
+      "diameter_std_mm": 0.2208
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 751,
+        "max_r": 887,
+        "min_c": 83,
+        "max_c": 142
+      },
+      "angle": 249.42,
+      "length": 144.3,
+      "length_mm": 12.2171,
+      "avg_diameter": 13.6,
+      "avg_diameter_mm": 1.1515,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 14.14,
+      "diameter_std": 2.61,
+      "diameter_median_mm": 1.1974,
+      "diameter_std_mm": 0.2208
+    },
+    "branches": []
+  },
+  "root_31": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 751,
+        "max_r": 806,
+        "min_c": 1267,
+        "max_c": 1368
+      },
+      "angle": 224.67,
+      "length": 195.65,
+      "length_mm": 16.5652,
+      "avg_diameter": 10.78,
+      "avg_diameter_mm": 0.9127,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 2.87,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.2433
+    },
+    "main_root": {
+      "id": 10,
+      "merged_from": [
+        6,
+        7
+      ],
+      "length": 7.414213562373095,
+      "length_mm": 0.6277,
+      "angle": 186.55,
+      "avg_diameter": 9.9,
+      "avg_diameter_mm": 0.8382,
+      "bbox": {
+        "min_r": 751,
+        "max_r": 806,
+        "min_c": 1267,
+        "max_c": 1368
+      },
+      "number_of_branches": 0,
+      "diameter_median": 10.0,
+      "diameter_std": 2.02,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.171
+    },
+    "branches": []
+  },
+  "root_32": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 887,
+        "max_r": 984,
+        "min_c": 182,
+        "max_c": 348
+      },
+      "angle": 205.98,
+      "length": 181.72,
+      "length_mm": 15.3859,
+      "avg_diameter": 16.75,
+      "avg_diameter_mm": 1.4182,
+      "diameter_method": 7,
+      "diameter_median": 16.97,
+      "diameter_std": 1.28,
+      "diameter_median_mm": 1.4368,
+      "diameter_std_mm": 0.108
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 887,
+        "max_r": 984,
+        "min_c": 182,
+        "max_c": 348
+      },
+      "angle": 205.98,
+      "length": 181.72,
+      "length_mm": 15.3859,
+      "avg_diameter": 16.75,
+      "avg_diameter_mm": 1.4182,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 16.97,
+      "diameter_std": 1.28,
+      "diameter_median_mm": 1.4368,
+      "diameter_std_mm": 0.108
+    },
+    "branches": []
+  },
+  "root_33": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1014,
+        "max_r": 1148,
+        "min_c": 70,
+        "max_c": 279
+      },
+      "angle": 210.78,
+      "length": 244.71,
+      "length_mm": 20.7184,
+      "avg_diameter": 17.98,
+      "avg_diameter_mm": 1.5223,
+      "diameter_method": 7,
+      "diameter_median": 17.89,
+      "diameter_std": 2.69,
+      "diameter_median_mm": 1.5146,
+      "diameter_std_mm": 0.2277
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1014,
+        "max_r": 1148,
+        "min_c": 70,
+        "max_c": 279
+      },
+      "angle": 210.78,
+      "length": 244.71,
+      "length_mm": 20.7184,
+      "avg_diameter": 17.98,
+      "avg_diameter_mm": 1.5223,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 17.89,
+      "diameter_std": 2.69,
+      "diameter_median_mm": 1.5146,
+      "diameter_std_mm": 0.2277
+    },
+    "branches": []
+  },
+  "root_34": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1027,
+        "max_r": 1067,
+        "min_c": 2301,
+        "max_c": 2400
+      },
+      "angle": 198.75,
+      "length": 105.67,
+      "length_mm": 8.9466,
+      "avg_diameter": 8.32,
+      "avg_diameter_mm": 0.7044,
+      "diameter_method": 7,
+      "diameter_median": 8.25,
+      "diameter_std": 1.93,
+      "diameter_median_mm": 0.6982,
+      "diameter_std_mm": 0.1638
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1027,
+        "max_r": 1067,
+        "min_c": 2301,
+        "max_c": 2400
+      },
+      "angle": 198.75,
+      "length": 105.67,
+      "length_mm": 8.9466,
+      "avg_diameter": 8.32,
+      "avg_diameter_mm": 0.7044,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 8.25,
+      "diameter_std": 1.93,
+      "diameter_median_mm": 0.6982,
+      "diameter_std_mm": 0.1638
+    },
+    "branches": []
+  },
+  "root_35": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1408,
+        "max_r": 1520,
+        "min_c": 239,
+        "max_c": 490
+      },
+      "angle": 198.3,
+      "length": 286.99,
+      "length_mm": 24.2989,
+      "avg_diameter": 19.24,
+      "avg_diameter_mm": 1.629,
+      "diameter_method": 7,
+      "diameter_median": 20.0,
+      "diameter_std": 4.42,
+      "diameter_median_mm": 1.6933,
+      "diameter_std_mm": 0.3739
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1408,
+        "max_r": 1520,
+        "min_c": 239,
+        "max_c": 490
+      },
+      "angle": 198.3,
+      "length": 286.99,
+      "length_mm": 24.2989,
+      "avg_diameter": 19.24,
+      "avg_diameter_mm": 1.629,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 20.0,
+      "diameter_std": 4.42,
+      "diameter_median_mm": 1.6933,
+      "diameter_std_mm": 0.3739
+    },
+    "branches": []
+  },
+  "root_36": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1428,
+        "max_r": 1487,
+        "min_c": 2133,
+        "max_c": 2224
+      },
+      "angle": 328.08,
+      "length": 105.05,
+      "length_mm": 8.8946,
+      "avg_diameter": 10.86,
+      "avg_diameter_mm": 0.9195,
+      "diameter_method": 7,
+      "diameter_median": 11.66,
+      "diameter_std": 1.73,
+      "diameter_median_mm": 0.9874,
+      "diameter_std_mm": 0.1463
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1428,
+        "max_r": 1487,
+        "min_c": 2133,
+        "max_c": 2224
+      },
+      "angle": 328.08,
+      "length": 105.05,
+      "length_mm": 8.8946,
+      "avg_diameter": 10.86,
+      "avg_diameter_mm": 0.9195,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 11.66,
+      "diameter_std": 1.73,
+      "diameter_median_mm": 0.9874,
+      "diameter_std_mm": 0.1463
+    },
+    "branches": []
+  },
+  "root_37": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1449,
+        "max_r": 1630,
+        "min_c": 1878,
+        "max_c": 2336
+      },
+      "angle": 339.88,
+      "length": 520.0,
+      "length_mm": 44.0268,
+      "avg_diameter": 16.53,
+      "avg_diameter_mm": 1.3995,
+      "diameter_method": 7,
+      "diameter_median": 16.49,
+      "diameter_std": 2.68,
+      "diameter_median_mm": 1.3964,
+      "diameter_std_mm": 0.2268
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1449,
+        "max_r": 1630,
+        "min_c": 1878,
+        "max_c": 2336
+      },
+      "angle": 339.88,
+      "length": 520.0,
+      "length_mm": 44.0268,
+      "avg_diameter": 16.53,
+      "avg_diameter_mm": 1.3995,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 16.49,
+      "diameter_std": 2.68,
+      "diameter_median_mm": 1.3964,
+      "diameter_std_mm": 0.2268
+    },
+    "branches": []
+  },
+  "root_38": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1673,
+        "max_r": 1771,
+        "min_c": 131,
+        "max_c": 237
+      },
+      "angle": 347.34,
+      "length": 156.21,
+      "length_mm": 13.2256,
+      "avg_diameter": 8.5,
+      "avg_diameter_mm": 0.7197,
+      "diameter_method": 7,
+      "diameter_median": 8.94,
+      "diameter_std": 2.32,
+      "diameter_median_mm": 0.7573,
+      "diameter_std_mm": 0.1968
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        4
+      ],
+      "length": 37.4558441227157,
+      "length_mm": 3.1713,
+      "angle": 327.27,
+      "avg_diameter": 8.59,
+      "avg_diameter_mm": 0.7273,
+      "bbox": {
+        "min_r": 1673,
+        "max_r": 1771,
+        "min_c": 131,
+        "max_c": 237
+      },
+      "number_of_branches": 0,
+      "diameter_median": 8.94,
+      "diameter_std": 2.33,
+      "diameter_median_mm": 0.7573,
+      "diameter_std_mm": 0.1974
+    },
+    "branches": []
+  },
+  "root_39": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1698,
+        "max_r": 1749,
+        "min_c": 2495,
+        "max_c": 2531
+      },
+      "angle": 202.81,
+      "length": 76.53,
+      "length_mm": 6.4793,
+      "avg_diameter": 10.56,
+      "avg_diameter_mm": 0.8941,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 4.92,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.417
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1698,
+        "max_r": 1749,
+        "min_c": 2495,
+        "max_c": 2531
+      },
+      "angle": 202.81,
+      "length": 76.53,
+      "length_mm": 6.4793,
+      "avg_diameter": 10.56,
+      "avg_diameter_mm": 0.8941,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 10.0,
+      "diameter_std": 4.92,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.417
+    },
+    "branches": []
+  },
+  "root_40": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1750,
+        "max_r": 1785,
+        "min_c": 449,
+        "max_c": 546
+      },
+      "angle": 348.45,
+      "length": 90.28,
+      "length_mm": 7.6441,
+      "avg_diameter": 17.41,
+      "avg_diameter_mm": 1.474,
+      "diameter_method": 7,
+      "diameter_median": 18.0,
+      "diameter_std": 2.26,
+      "diameter_median_mm": 1.524,
+      "diameter_std_mm": 0.1915
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1750,
+        "max_r": 1785,
+        "min_c": 449,
+        "max_c": 546
+      },
+      "angle": 348.45,
+      "length": 90.28,
+      "length_mm": 7.6441,
+      "avg_diameter": 17.41,
+      "avg_diameter_mm": 1.474,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 18.0,
+      "diameter_std": 2.26,
+      "diameter_median_mm": 1.524,
+      "diameter_std_mm": 0.1915
+    },
+    "branches": []
+  },
+  "root_41": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1800,
+        "max_r": 1888,
+        "min_c": 378,
+        "max_c": 471
+      },
+      "angle": 340.14,
+      "length": 179.11,
+      "length_mm": 15.1644,
+      "avg_diameter": 11.46,
+      "avg_diameter_mm": 0.9703,
+      "diameter_method": 7,
+      "diameter_median": 12.0,
+      "diameter_std": 3.51,
+      "diameter_median_mm": 1.016,
+      "diameter_std_mm": 0.297
+    },
+    "main_root": {
+      "id": 11,
+      "merged_from": [
+        2,
+        6,
+        7
+      ],
+      "length": 68.39696961966999,
+      "length_mm": 5.7909,
+      "angle": 320.62,
+      "avg_diameter": 11.75,
+      "avg_diameter_mm": 0.9948,
+      "bbox": {
+        "min_r": 1800,
+        "max_r": 1888,
+        "min_c": 378,
+        "max_c": 471
+      },
+      "number_of_branches": 0,
+      "diameter_median": 12.81,
+      "diameter_std": 3.58,
+      "diameter_median_mm": 1.0843,
+      "diameter_std_mm": 0.3035
+    },
+    "branches": []
+  },
+  "root_42": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1809,
+        "max_r": 1994,
+        "min_c": 254,
+        "max_c": 395
+      },
+      "angle": 314.42,
+      "length": 329.93,
+      "length_mm": 27.9342,
+      "avg_diameter": 12.08,
+      "avg_diameter_mm": 1.0228,
+      "diameter_method": 7,
+      "diameter_median": 12.0,
+      "diameter_std": 2.24,
+      "diameter_median_mm": 1.016,
+      "diameter_std_mm": 0.1894
+    },
+    "main_root": {
+      "id": 8,
+      "merged_from": [
+        5,
+        6
+      ],
+      "length": 31.14213562373095,
+      "length_mm": 2.6367,
+      "angle": 340.93,
+      "avg_diameter": 12.88,
+      "avg_diameter_mm": 1.0905,
+      "bbox": {
+        "min_r": 1809,
+        "max_r": 1994,
+        "min_c": 254,
+        "max_c": 395
+      },
+      "number_of_branches": 1,
+      "diameter_median": 12.65,
+      "diameter_std": 1.97,
+      "diameter_median_mm": 1.071,
+      "diameter_std_mm": 0.1664
+    },
+    "branches": [
+      {
+        "id": 7,
+        "merged_from": [
+          2,
+          3
+        ],
+        "length": 163.86500705120554,
+        "length_mm": 13.8739,
+        "angle": 310.99,
+        "avg_diameter": 11.64,
+        "avg_diameter_mm": 0.9855,
+        "bbox": {
+          "min_r": 1809,
+          "max_r": 1994,
+          "min_c": 254,
+          "max_c": 395
+        },
+        "comparison_angle": 29.94,
+        "insertion_angle": 107.78,
+        "diameter_median": 11.66,
+        "diameter_std": 1.97,
+        "diameter_median_mm": 0.9874,
+        "diameter_std_mm": 0.1666
+      }
+    ]
+  },
+  "root_43": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1841,
+        "max_r": 2141,
+        "min_c": 467,
+        "max_c": 938
+      },
+      "angle": 329.38,
+      "length": 1170.26,
+      "length_mm": 99.0821,
+      "avg_diameter": 13.8,
+      "avg_diameter_mm": 1.1684,
+      "diameter_method": 7,
+      "diameter_median": 14.14,
+      "diameter_std": 4.81,
+      "diameter_median_mm": 1.1974,
+      "diameter_std_mm": 0.4076
+    },
+    "main_root": {
+      "id": 36,
+      "merged_from": [
+        11,
+        13,
+        16,
+        18,
+        22
+      ],
+      "length": 20.727922061357855,
+      "length_mm": 1.755,
+      "angle": 330.08,
+      "avg_diameter": 14.87,
+      "avg_diameter_mm": 1.259,
+      "bbox": {
+        "min_r": 1841,
+        "max_r": 2141,
+        "min_c": 467,
+        "max_c": 938
+      },
+      "number_of_branches": 2,
+      "diameter_median": 14.42,
+      "diameter_std": 4.13,
+      "diameter_median_mm": 1.2211,
+      "diameter_std_mm": 0.3497
+    },
+    "branches": [
+      {
+        "id": 31,
+        "merged_from": [
+          9,
+          14,
+          21
+        ],
+        "length": 44.4558441227157,
+        "length_mm": 3.7639,
+        "angle": 304.48,
+        "avg_diameter": 9.42,
+        "avg_diameter_mm": 0.7976,
+        "bbox": {
+          "min_r": 1841,
+          "max_r": 2141,
+          "min_c": 467,
+          "max_c": 938
+        },
+        "comparison_angle": 25.6,
+        "insertion_angle": 157.67,
+        "diameter_median": 10.0,
+        "diameter_std": 2.74,
+        "diameter_median_mm": 0.8467,
+        "diameter_std_mm": 0.2323
+      },
+      {
+        "id": 37,
+        "merged_from": [
+          2,
+          3,
+          5,
+          19,
+          25
+        ],
+        "length": 57.42640687119284,
+        "length_mm": 4.8621,
+        "angle": 313.05,
+        "avg_diameter": 14.7,
+        "avg_diameter_mm": 1.2446,
+        "bbox": {
+          "min_r": 1841,
+          "max_r": 2141,
+          "min_c": 467,
+          "max_c": 938
+        },
+        "comparison_angle": 17.03,
+        "insertion_angle": 125.17,
+        "diameter_median": 14.56,
+        "diameter_std": 3.75,
+        "diameter_median_mm": 1.2328,
+        "diameter_std_mm": 0.3178
+      }
+    ]
+  },
+  "root_44": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1924,
+        "max_r": 2005,
+        "min_c": 1835,
+        "max_c": 1881
+      },
+      "angle": 296.63,
+      "length": 91.57,
+      "length_mm": 7.7528,
+      "avg_diameter": 8.09,
+      "avg_diameter_mm": 0.685,
+      "diameter_method": 7,
+      "diameter_median": 8.94,
+      "diameter_std": 2.28,
+      "diameter_median_mm": 0.7573,
+      "diameter_std_mm": 0.1931
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1924,
+        "max_r": 2005,
+        "min_c": 1835,
+        "max_c": 1881
+      },
+      "angle": 296.63,
+      "length": 91.57,
+      "length_mm": 7.7528,
+      "avg_diameter": 8.09,
+      "avg_diameter_mm": 0.685,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 8.94,
+      "diameter_std": 2.28,
+      "diameter_median_mm": 0.7573,
+      "diameter_std_mm": 0.1931
+    },
+    "branches": []
+  },
+  "root_45": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1981,
+        "max_r": 2039,
+        "min_c": 2223,
+        "max_c": 2308
+      },
+      "angle": 211.31,
+      "length": 92.47,
+      "length_mm": 7.829,
+      "avg_diameter": 12.17,
+      "avg_diameter_mm": 1.0304,
+      "diameter_method": 7,
+      "diameter_median": 11.91,
+      "diameter_std": 3.38,
+      "diameter_median_mm": 1.0087,
+      "diameter_std_mm": 0.2865
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1981,
+        "max_r": 2039,
+        "min_c": 2223,
+        "max_c": 2308
+      },
+      "angle": 211.31,
+      "length": 92.47,
+      "length_mm": 7.829,
+      "avg_diameter": 12.17,
+      "avg_diameter_mm": 1.0304,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 11.91,
+      "diameter_std": 3.38,
+      "diameter_median_mm": 1.0087,
+      "diameter_std_mm": 0.2865
+    },
+    "branches": []
+  },
+  "root_46": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1982,
+        "max_r": 2067,
+        "min_c": 567,
+        "max_c": 658
+      },
+      "angle": 317.89,
+      "length": 111.34,
+      "length_mm": 9.4266,
+      "avg_diameter": 12.93,
+      "avg_diameter_mm": 1.0947,
+      "diameter_method": 7,
+      "diameter_median": 12.81,
+      "diameter_std": 2.28,
+      "diameter_median_mm": 1.0843,
+      "diameter_std_mm": 0.1934
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 1982,
+        "max_r": 2067,
+        "min_c": 567,
+        "max_c": 658
+      },
+      "angle": 317.89,
+      "length": 111.34,
+      "length_mm": 9.4266,
+      "avg_diameter": 12.93,
+      "avg_diameter_mm": 1.0947,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 12.81,
+      "diameter_std": 2.28,
+      "diameter_median_mm": 1.0843,
+      "diameter_std_mm": 0.1934
+    },
+    "branches": []
+  },
+  "root_47": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 1993,
+        "max_r": 2056,
+        "min_c": 93,
+        "max_c": 212
+      },
+      "angle": 335.74,
+      "length": 163.12,
+      "length_mm": 13.8112,
+      "avg_diameter": 11.53,
+      "avg_diameter_mm": 0.9762,
+      "diameter_method": 7,
+      "diameter_median": 11.66,
+      "diameter_std": 2.94,
+      "diameter_median_mm": 0.9874,
+      "diameter_std_mm": 0.2491
+    },
+    "main_root": {
+      "id": 3,
+      "merged_from": [
+        3
+      ],
+      "length": 117.39696961967,
+      "length_mm": 9.9396,
+      "angle": 338.23,
+      "avg_diameter": 11.42,
+      "avg_diameter_mm": 0.9669,
+      "bbox": {
+        "min_r": 1993,
+        "max_r": 2056,
+        "min_c": 93,
+        "max_c": 212
+      },
+      "number_of_branches": 0,
+      "diameter_median": 11.66,
+      "diameter_std": 3.1,
+      "diameter_median_mm": 0.9874,
+      "diameter_std_mm": 0.2622
+    },
+    "branches": []
+  },
+  "root_48": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 2026,
+        "max_r": 2059,
+        "min_c": 948,
+        "max_c": 1017
+      },
+      "angle": 338.71,
+      "length": 74.18,
+      "length_mm": 6.2809,
+      "avg_diameter": 6.1,
+      "avg_diameter_mm": 0.5165,
+      "diameter_method": 7,
+      "diameter_median": 6.16,
+      "diameter_std": 1.09,
+      "diameter_median_mm": 0.5217,
+      "diameter_std_mm": 0.0922
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 2026,
+        "max_r": 2059,
+        "min_c": 948,
+        "max_c": 1017
+      },
+      "angle": 338.71,
+      "length": 74.18,
+      "length_mm": 6.2809,
+      "avg_diameter": 6.1,
+      "avg_diameter_mm": 0.5165,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 6.16,
+      "diameter_std": 1.09,
+      "diameter_median_mm": 0.5217,
+      "diameter_std_mm": 0.0922
+    },
+    "branches": []
+  },
+  "root_49": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 2033,
+        "max_r": 2141,
+        "min_c": 2182,
+        "max_c": 2531
+      },
+      "angle": 345.56,
+      "length": 1107.86,
+      "length_mm": 93.799,
+      "avg_diameter": 12.72,
+      "avg_diameter_mm": 1.077,
+      "diameter_method": 7,
+      "diameter_median": 12.65,
+      "diameter_std": 5.69,
+      "diameter_median_mm": 1.071,
+      "diameter_std_mm": 0.4818
+    },
+    "main_root": {
+      "id": 44,
+      "merged_from": [
+        3,
+        5,
+        7
+      ],
+      "length": 12.485281374238571,
+      "length_mm": 1.0571,
+      "angle": 208.57,
+      "avg_diameter": 16.49,
+      "avg_diameter_mm": 1.3962,
+      "bbox": {
+        "min_r": 2033,
+        "max_r": 2141,
+        "min_c": 2182,
+        "max_c": 2531
+      },
+      "number_of_branches": 6,
+      "diameter_median": 16.49,
+      "diameter_std": 3.08,
+      "diameter_median_mm": 1.3964,
+      "diameter_std_mm": 0.2611
+    },
+    "branches": [
+      {
+        "id": 4,
+        "merged_from": [
+          4
+        ],
+        "length": 52.071067811865476,
+        "length_mm": 4.4087,
+        "angle": 354.88,
+        "avg_diameter": 9.46,
+        "avg_diameter_mm": 0.8009,
+        "bbox": {
+          "min_r": 2033,
+          "max_r": 2141,
+          "min_c": 2182,
+          "max_c": 2531
+        },
+        "comparison_angle": 146.31,
+        "insertion_angle": 169.42,
+        "diameter_median": 10.0,
+        "diameter_std": 3.61,
+        "diameter_median_mm": 0.8467,
+        "diameter_std_mm": 0.3057
+      },
+      {
+        "id": 9,
+        "merged_from": [
+          9
+        ],
+        "length": 69.9116882454314,
+        "length_mm": 5.9192,
+        "angle": 356.46,
+        "avg_diameter": 13.44,
+        "avg_diameter_mm": 1.1379,
+        "bbox": {
+          "min_r": 2033,
+          "max_r": 2141,
+          "min_c": 2182,
+          "max_c": 2531
+        },
+        "comparison_angle": 147.89,
+        "insertion_angle": 138.74,
+        "diameter_median": 13.42,
+        "diameter_std": 6.31,
+        "diameter_median_mm": 1.1359,
+        "diameter_std_mm": 0.5342
+      },
+      {
+        "id": 43,
+        "merged_from": [
+          29,
+          35
+        ],
+        "length": 76.1126983722081,
+        "length_mm": 6.4442,
+        "angle": 199.94,
+        "avg_diameter": 10.52,
+        "avg_diameter_mm": 0.8907,
+        "bbox": {
+          "min_r": 2033,
+          "max_r": 2141,
+          "min_c": 2182,
+          "max_c": 2531
+        },
+        "comparison_angle": 8.63,
+        "insertion_angle": 15.52,
+        "diameter_median": 10.0,
+        "diameter_std": 3.83,
+        "diameter_median_mm": 0.8467,
+        "diameter_std_mm": 0.3242
+      },
+      {
+        "id": 45,
+        "merged_from": [
+          11,
+          13,
+          16
+        ],
+        "length": 27.071067811865476,
+        "length_mm": 2.292,
+        "angle": 342.9,
+        "avg_diameter": 8.85,
+        "avg_diameter_mm": 0.7493,
+        "bbox": {
+          "min_r": 2033,
+          "max_r": 2141,
+          "min_c": 2182,
+          "max_c": 2531
+        },
+        "comparison_angle": 134.33,
+        "insertion_angle": 162.57,
+        "diameter_median": 8.0,
+        "diameter_std": 3.45,
+        "diameter_median_mm": 0.6773,
+        "diameter_std_mm": 0.2919
+      },
+      {
+        "id": 48,
+        "merged_from": [
+          19,
+          22,
+          31,
+          33
+        ],
+        "length": 6.82842712474619,
+        "length_mm": 0.5781,
+        "angle": 344.79,
+        "avg_diameter": 14.45,
+        "avg_diameter_mm": 1.2234,
+        "bbox": {
+          "min_r": 2033,
+          "max_r": 2141,
+          "min_c": 2182,
+          "max_c": 2531
+        },
+        "comparison_angle": 136.22,
+        "insertion_angle": 154.21,
+        "diameter_median": 14.0,
+        "diameter_std": 2.35,
+        "diameter_median_mm": 1.1853,
+        "diameter_std_mm": 0.1986
+      },
+      {
+        "id": 49,
+        "merged_from": [
+          8,
+          10,
+          28,
+          32
+        ],
+        "length": 16.071067811865476,
+        "length_mm": 1.3607,
+        "angle": 343.48,
+        "avg_diameter": 14.87,
+        "avg_diameter_mm": 1.259,
+        "bbox": {
+          "min_r": 2033,
+          "max_r": 2141,
+          "min_c": 2182,
+          "max_c": 2531
+        },
+        "comparison_angle": 134.91,
+        "insertion_angle": 34.74,
+        "diameter_median": 16.49,
+        "diameter_std": 6.49,
+        "diameter_median_mm": 1.3964,
+        "diameter_std_mm": 0.5499
+      }
+    ]
+  },
+  "root_50": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 2090,
+        "max_r": 2141,
+        "min_c": 1923,
+        "max_c": 2062
+      },
+      "angle": 193.29,
+      "length": 298.58,
+      "length_mm": 25.2798,
+      "avg_diameter": 9.59,
+      "avg_diameter_mm": 0.812,
+      "diameter_method": 7,
+      "diameter_median": 10.0,
+      "diameter_std": 3.23,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.2733
+    },
+    "main_root": {
+      "id": 23,
+      "merged_from": [
+        3,
+        12
+      ],
+      "length": 84.04163056034263,
+      "length_mm": 7.1155,
+      "angle": 191.17,
+      "avg_diameter": 10.01,
+      "avg_diameter_mm": 0.8475,
+      "bbox": {
+        "min_r": 2090,
+        "max_r": 2141,
+        "min_c": 1923,
+        "max_c": 2062
+      },
+      "number_of_branches": 0,
+      "diameter_median": 10.0,
+      "diameter_std": 1.83,
+      "diameter_median_mm": 0.8467,
+      "diameter_std_mm": 0.1551
+    },
+    "branches": []
+  },
+  "root_51": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 2109,
+        "max_r": 2141,
+        "min_c": 1187,
+        "max_c": 1285
+      },
+      "angle": 194.33,
+      "length": 103.18,
+      "length_mm": 8.7362,
+      "avg_diameter": 8.32,
+      "avg_diameter_mm": 0.7044,
+      "diameter_method": 7,
+      "diameter_median": 8.0,
+      "diameter_std": 2.12,
+      "diameter_median_mm": 0.6773,
+      "diameter_std_mm": 0.1797
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 2109,
+        "max_r": 2141,
+        "min_c": 1187,
+        "max_c": 1285
+      },
+      "angle": 194.33,
+      "length": 103.18,
+      "length_mm": 8.7362,
+      "avg_diameter": 8.32,
+      "avg_diameter_mm": 0.7044,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 8.0,
+      "diameter_std": 2.12,
+      "diameter_median_mm": 0.6773,
+      "diameter_std_mm": 0.1797
+    },
+    "branches": []
+  },
+  "root_52": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 2111,
+        "max_r": 2141,
+        "min_c": 2081,
+        "max_c": 2133
+      },
+      "angle": 201.33,
+      "length": 81.7,
+      "length_mm": 6.9171,
+      "avg_diameter": 9.55,
+      "avg_diameter_mm": 0.8086,
+      "diameter_method": 7,
+      "diameter_median": 8.0,
+      "diameter_std": 3.42,
+      "diameter_median_mm": 0.6773,
+      "diameter_std_mm": 0.2898
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 2111,
+        "max_r": 2141,
+        "min_c": 2081,
+        "max_c": 2133
+      },
+      "angle": 201.33,
+      "length": 81.7,
+      "length_mm": 6.9171,
+      "avg_diameter": 9.55,
+      "avg_diameter_mm": 0.8086,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 8.0,
+      "diameter_std": 3.42,
+      "diameter_median_mm": 0.6773,
+      "diameter_std_mm": 0.2898
+    },
+    "branches": []
+  },
+  "root_53": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 2113,
+        "max_r": 2141,
+        "min_c": 1797,
+        "max_c": 1888
+      },
+      "angle": 181.32,
+      "length": 104.94,
+      "length_mm": 8.885,
+      "avg_diameter": 15.48,
+      "avg_diameter_mm": 1.3106,
+      "diameter_method": 7,
+      "diameter_median": 15.34,
+      "diameter_std": 7.02,
+      "diameter_median_mm": 1.299,
+      "diameter_std_mm": 0.5943
+    },
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        4
+      ],
+      "length": 69.31370849898477,
+      "length_mm": 5.8686,
+      "angle": 184.78,
+      "avg_diameter": 15.68,
+      "avg_diameter_mm": 1.3276,
+      "bbox": {
+        "min_r": 2113,
+        "max_r": 2141,
+        "min_c": 1797,
+        "max_c": 1888
+      },
+      "number_of_branches": 0,
+      "diameter_median": 16.31,
+      "diameter_std": 7.28,
+      "diameter_median_mm": 1.3808,
+      "diameter_std_mm": 0.6164
+    },
+    "branches": []
+  },
+  "root_54": {
+    "aggregated": {
+      "bbox": {
+        "min_r": 2115,
+        "max_r": 2141,
+        "min_c": 1740,
+        "max_c": 1790
+      },
+      "angle": 307.3,
+      "length": 69.87,
+      "length_mm": 5.9157,
+      "avg_diameter": 9.05,
+      "avg_diameter_mm": 0.7662,
+      "diameter_method": 7,
+      "diameter_median": 8.12,
+      "diameter_std": 4.0,
+      "diameter_median_mm": 0.6878,
+      "diameter_std_mm": 0.3383
+    },
+    "main_root": {
+      "bbox": {
+        "min_r": 2115,
+        "max_r": 2141,
+        "min_c": 1740,
+        "max_c": 1790
+      },
+      "angle": 307.3,
+      "length": 69.87,
+      "length_mm": 5.9157,
+      "avg_diameter": 9.05,
+      "avg_diameter_mm": 0.7662,
+      "diameter_method": 7,
+      "number_of_branches": 0,
+      "diameter_median": 8.12,
+      "diameter_std": 4.0,
+      "diameter_median_mm": 0.6878,
+      "diameter_std_mm": 0.3383
+    },
+    "branches": []
+  }
+}

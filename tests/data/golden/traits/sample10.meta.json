@@ -1,0 +1,345 @@
+{
+  "root_0": {
+    "component_id": 2,
+    "bbox": {
+      "min_r": 332,
+      "max_r": 461,
+      "min_c": 223,
+      "max_c": 249
+    },
+    "n_branches": 0,
+    "branches": []
+  },
+  "root_1": {
+    "component_id": 3,
+    "bbox": {
+      "min_r": 469,
+      "max_r": 585,
+      "min_c": 223,
+      "max_c": 246
+    },
+    "n_branches": 0,
+    "merged": [
+      {
+        "id": 3,
+        "merged_from": [
+          3
+        ],
+        "length": 3.0,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 5,
+        "merged_from": [
+          2,
+          4
+        ],
+        "length": 117.40737687307956,
+        "classification": "normal"
+      }
+    ],
+    "merge_confidence": 1.0,
+    "main_root": {
+      "id": 5,
+      "merged_from": [
+        2,
+        4
+      ]
+    },
+    "branches": []
+  },
+  "root_2": {
+    "component_id": 6,
+    "bbox": {
+      "min_r": 495,
+      "max_r": 645,
+      "min_c": 34,
+      "max_c": 216
+    },
+    "n_branches": 2,
+    "merged": [
+      {
+        "id": 7,
+        "merged_from": [
+          7
+        ],
+        "length": 6.242640687119285,
+        "classification": "small"
+      },
+      {
+        "id": 9,
+        "merged_from": [
+          9
+        ],
+        "length": 26.071067811865476,
+        "classification": "normal"
+      },
+      {
+        "id": 14,
+        "merged_from": [
+          14
+        ],
+        "length": 17.48528137423857,
+        "classification": "normal"
+      },
+      {
+        "id": 15,
+        "merged_from": [
+          2,
+          4
+        ],
+        "length": 142.96961063805793,
+        "classification": "normal"
+      },
+      {
+        "id": 19,
+        "merged_from": [
+          8,
+          12,
+          13
+        ],
+        "length": 80.97498586186694,
+        "classification": "normal"
+      },
+      {
+        "id": 20,
+        "merged_from": [
+          5,
+          6,
+          10,
+          11
+        ],
+        "length": 189.1850504405115,
+        "classification": "normal"
+      }
+    ],
+    "merge_confidence": 0.6666666666666666,
+    "main_root": {
+      "id": 20,
+      "merged_from": [
+        5,
+        6,
+        10,
+        11
+      ]
+    },
+    "branches": [
+      {
+        "id": 15,
+        "merged_from": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 19,
+        "merged_from": [
+          8,
+          12,
+          13
+        ]
+      }
+    ]
+  },
+  "root_3": {
+    "component_id": 11,
+    "bbox": {
+      "min_r": 528,
+      "max_r": 603,
+      "min_c": 472,
+      "max_c": 510
+    },
+    "n_branches": 0,
+    "branches": []
+  },
+  "root_4": {
+    "component_id": 12,
+    "bbox": {
+      "min_r": 577,
+      "max_r": 599,
+      "min_c": 298,
+      "max_c": 353
+    },
+    "n_branches": 0,
+    "branches": []
+  },
+  "root_5": {
+    "component_id": 13,
+    "bbox": {
+      "min_r": 596,
+      "max_r": 669,
+      "min_c": 293,
+      "max_c": 510
+    },
+    "n_branches": 3,
+    "merged": [
+      {
+        "id": 4,
+        "merged_from": [
+          4
+        ],
+        "length": 17.899494936611667,
+        "classification": "normal"
+      },
+      {
+        "id": 6,
+        "merged_from": [
+          6
+        ],
+        "length": 11.414213562373096,
+        "classification": "normal"
+      },
+      {
+        "id": 13,
+        "merged_from": [
+          13
+        ],
+        "length": 26.31370849898476,
+        "classification": "normal"
+      },
+      {
+        "id": 15,
+        "merged_from": [
+          15
+        ],
+        "length": 17.071067811865476,
+        "classification": "normal"
+      },
+      {
+        "id": 18,
+        "merged_from": [
+          18
+        ],
+        "length": 6.242640687119285,
+        "classification": "small"
+      },
+      {
+        "id": 20,
+        "merged_from": [
+          20
+        ],
+        "length": 2.414213562373095,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 21,
+        "merged_from": [
+          21
+        ],
+        "length": 24.142135623730955,
+        "classification": "normal"
+      },
+      {
+        "id": 23,
+        "merged_from": [
+          23
+        ],
+        "length": 1.0,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 24,
+        "merged_from": [
+          24
+        ],
+        "length": 17.313708498984763,
+        "classification": "normal"
+      },
+      {
+        "id": 30,
+        "merged_from": [
+          30
+        ],
+        "length": 1.0,
+        "classification": "likely_ridge"
+      },
+      {
+        "id": 39,
+        "merged_from": [
+          19,
+          17,
+          22
+        ],
+        "length": 91.02699959130808,
+        "classification": "normal"
+      },
+      {
+        "id": 41,
+        "merged_from": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "length": 114.30577475617994,
+        "classification": "normal"
+      },
+      {
+        "id": 44,
+        "merged_from": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          31
+        ],
+        "length": 130.38477631085024,
+        "classification": "normal"
+      },
+      {
+        "id": 45,
+        "merged_from": [
+          8,
+          11,
+          12,
+          10,
+          16
+        ],
+        "length": 228.38382420043104,
+        "classification": "normal"
+      }
+    ],
+    "merge_confidence": 0.6428571428571429,
+    "main_root": {
+      "id": 44,
+      "merged_from": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        31
+      ]
+    },
+    "branches": [
+      {
+        "id": 39,
+        "merged_from": [
+          19,
+          17,
+          22
+        ]
+      },
+      {
+        "id": 41,
+        "merged_from": [
+          2,
+          3,
+          5,
+          7
+        ]
+      },
+      {
+        "id": 45,
+        "merged_from": [
+          8,
+          11,
+          12,
+          10,
+          16
+        ]
+      }
+    ]
+  }
+}

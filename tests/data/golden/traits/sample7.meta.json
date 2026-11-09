@@ -1,0 +1,229 @@
+{
+  "root_0": {
+    "component_id": 1,
+    "bbox": {
+      "min_r": 106,
+      "max_r": 152,
+      "min_c": 440,
+      "max_c": 506
+    },
+    "n_branches": 0,
+    "branches": []
+  },
+  "root_1": {
+    "component_id": 2,
+    "bbox": {
+      "min_r": 219,
+      "max_r": 257,
+      "min_c": 329,
+      "max_c": 377
+    },
+    "n_branches": 0,
+    "branches": []
+  },
+  "root_2": {
+    "component_id": 3,
+    "bbox": {
+      "min_r": 288,
+      "max_r": 720,
+      "min_c": 138,
+      "max_c": 428
+    },
+    "n_branches": 4,
+    "merged": [
+      {
+        "id": 3,
+        "merged_from": [
+          3
+        ],
+        "length": 33.89949493661166,
+        "classification": "normal"
+      },
+      {
+        "id": 4,
+        "merged_from": [
+          4
+        ],
+        "length": 53.2842712474619,
+        "classification": "normal"
+      },
+      {
+        "id": 7,
+        "merged_from": [
+          7
+        ],
+        "length": 36.071067811865476,
+        "classification": "normal"
+      },
+      {
+        "id": 9,
+        "merged_from": [
+          9
+        ],
+        "length": 27.899494936611667,
+        "classification": "normal"
+      },
+      {
+        "id": 11,
+        "merged_from": [
+          11
+        ],
+        "length": 37.071067811865476,
+        "classification": "normal"
+      },
+      {
+        "id": 12,
+        "merged_from": [
+          12
+        ],
+        "length": 45.4558441227157,
+        "classification": "normal"
+      },
+      {
+        "id": 15,
+        "merged_from": [
+          15
+        ],
+        "length": 76.2842712474619,
+        "classification": "normal"
+      },
+      {
+        "id": 17,
+        "merged_from": [
+          17
+        ],
+        "length": 18.414213562373096,
+        "classification": "normal"
+      },
+      {
+        "id": 19,
+        "merged_from": [
+          19
+        ],
+        "length": 51.08326112068522,
+        "classification": "normal"
+      },
+      {
+        "id": 22,
+        "merged_from": [
+          22
+        ],
+        "length": 212.87720036002526,
+        "classification": "normal"
+      },
+      {
+        "id": 26,
+        "merged_from": [
+          26
+        ],
+        "length": 33.04163056034261,
+        "classification": "normal"
+      },
+      {
+        "id": 39,
+        "merged_from": [
+          20,
+          24
+        ],
+        "length": 115.17692949478004,
+        "classification": "normal"
+      },
+      {
+        "id": 41,
+        "merged_from": [
+          27,
+          29
+        ],
+        "length": 127.37762479229846,
+        "classification": "normal"
+      },
+      {
+        "id": 42,
+        "merged_from": [
+          2,
+          5,
+          6,
+          8,
+          10,
+          13,
+          14,
+          16,
+          18,
+          21,
+          23,
+          28
+        ],
+        "length": 481.3304712400456,
+        "classification": "normal"
+      }
+    ],
+    "merge_confidence": 0.8461538461538461,
+    "main_root": {
+      "id": 22,
+      "merged_from": [
+        22
+      ]
+    },
+    "branches": [
+      {
+        "id": 15,
+        "merged_from": [
+          15
+        ]
+      },
+      {
+        "id": 39,
+        "merged_from": [
+          20,
+          24
+        ]
+      },
+      {
+        "id": 41,
+        "merged_from": [
+          27,
+          29
+        ]
+      },
+      {
+        "id": 42,
+        "merged_from": [
+          2,
+          5,
+          6,
+          8,
+          10,
+          13,
+          14,
+          16,
+          18,
+          21,
+          23,
+          28
+        ]
+      }
+    ]
+  },
+  "root_3": {
+    "component_id": 5,
+    "bbox": {
+      "min_r": 406,
+      "max_r": 470,
+      "min_c": 0,
+      "max_c": 114
+    },
+    "n_branches": 0,
+    "branches": []
+  },
+  "root_4": {
+    "component_id": 10,
+    "bbox": {
+      "min_r": 556,
+      "max_r": 621,
+      "min_c": 349,
+      "max_c": 408
+    },
+    "n_branches": 0,
+    "branches": []
+  }
+}

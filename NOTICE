@@ -1,0 +1,19 @@
+rhizotrace is licensed under the Mozilla Public License 2.0 (see LICENSE).
+
+Segmentation model
+------------------
+The UNet architecture in src/rhizotrace/segmentation/unet.py comes from the
+PlantRootSeg project, https://github.com/GatorSense/PlantRootSeg,
+Copyright (c) 2019 Weihuang Xu and Alina Zare, originally released under the GNU
+Affero General Public License v3.0. The copyright holders have granted permission to
+distribute this adaptation with rhizotrace under its license.
+
+The P-EnDe model weights are not distributed with rhizotrace. Users download them from
+the PlantRootSeg repository, under that project's license.
+
+If you use the segmentation model, cite:
+
+Xu, W., Yu, G., Zare, A., Zurweller, B., Rowland, D. L., Reyes-Cabrera, J.,
+Fritschi, F. B., Matamala, R., & Juenger, T. E. (2020). Overcoming small
+minirhizotron datasets using transfer learning. Computers and Electronics in
+Agriculture, 175, 105466. https://doi.org/10.1016/j.compag.2020.105466

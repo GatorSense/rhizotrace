@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-08-26T09:37:05+00:00",
+  "torch": "2.8.0+cu128",
+  "device": "cpu",
+  "threshold": 0.7735,
+  "normalize": "per_image",
+  "weights_sha256": "0ad6298eb63508c09a6c3aa14fc0a715627425f992bf4ae552b03941ba4c5aaf",
+  "names": [
+    "GT_Switchgrass_T112_L4_2017.05.22_123606_FRMI_DPI300_3_1",
+    "GT_Switchgrass_T112_L4_2017.05.22_123606_FRMI_DPI300_3_3",
+    "GT_Switchgrass_T151_L6_2018.04.17_134831_TMPL_DPI300_1_5",
+    "GT_Switchgrass_T151_L6_2018.04.17_134831_TMPL_DPI300_2_5"
+  ],
+  "raw_source": "PRMI"
+}
