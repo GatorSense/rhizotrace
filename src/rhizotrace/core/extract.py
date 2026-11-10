@@ -8,12 +8,11 @@ from scipy import ndimage
 
 from ..config import Config
 from ..units import to_mm
-from .branches import (Branch, insertion_angle, merge_by_angle, merge_by_diameter,
-                       select_main_root)
+from .branches import Branch, insertion_angle, merge_by_angle, merge_by_diameter, select_main_root
 from .diameter import distance_map, estimate_diameter, mean_diameter
 from .junctions import prune_spurs, separate_branches
 from .orientation import axis_orientation
-from .skeleton import DEFAULT_ESTIMATOR, order_pixels, skeleton_length, skeletonize
+from .skeleton import DEFAULT_ESTIMATOR, skeleton_length, skeletonize
 
 CROP_PAD = 2
 
@@ -52,14 +51,6 @@ class Root:
         return len(self.branches)
 
 
-def _ordered_path(rc):
-    """order_pixels on a path's own bounding box (same raster order, much less work)."""
-    r0, c0 = rc.min(axis=0)
-    local = np.zeros(rc.max(axis=0) - (r0, c0) + 1, dtype=np.uint8)
-    local[rc[:, 0] - r0, rc[:, 1] - c0] = 1
-    return [(r + r0, c + c0) for r, c in order_pixels(local)]
-
-
 def _pixels_length(rc, estimator=DEFAULT_ESTIMATOR):
     """Length of an unordered skeleton pixel set, summed over its own steps.
 
@@ -74,10 +65,23 @@ def _pixels_length(rc, estimator=DEFAULT_ESTIMATOR):
 
 
 def _traits(crop, dist, rc, cfg, **extra):
-    path = _ordered_path(rc)
     values = estimate_diameter(crop, rc, dist=dist)
     return Traits(rc, values, _pixels_length(rc, cfg.length_estimator), axis_orientation(rc),
-                  mean_diameter(values), **extra), path
+                  mean_diameter(values), **extra)
+
+
+EIGHT_CONNECTED = np.ones((3, 3), dtype=bool)
+
+
+def _junctions_touched(j_labels, rc, prox):
+    """Labels of the junction regions within Chebyshev distance prox of a pixel set."""
+    r0, c0 = np.maximum(rc.min(axis=0) - prox, 0)
+    r1, c1 = np.minimum(rc.max(axis=0) + prox + 1, j_labels.shape)
+    window = j_labels[r0:r1, c0:c1]
+    near = np.zeros(window.shape, dtype=bool)
+    near[rc[:, 0] - r0, rc[:, 1] - c0] = True
+    near = ndimage.binary_dilation(near, structure=EIGHT_CONNECTED, iterations=prox)
+    return set(np.unique(window[near]).tolist()) - {0}
 
 
 def _padded_bbox(r0, r1, c0, c1, shape):
@@ -156,14 +160,12 @@ def _extract_crop(crop, bbox, cfg, component_id):
             merged = [Branch(p["id"], p["pixels"], [p["id"]]) for p in pieces]
     root.merged = merged
 
-    features, paths = [], []
+    features = []
     for branch in merged:
         rc = np.asarray(branch.pixels, dtype=np.int64).reshape(-1, 2)
         if _too_short(rc, cfg):
             continue
-        traits, path = _traits(crop, dist, rc, cfg, id=branch.id, merged_from=list(branch.merged_from))
-        features.append(traits)
-        paths.append(path)
+        features.append(_traits(crop, dist, rc, cfg, id=branch.id, merged_from=list(branch.merged_from)))
     if not features:
         return root
 
@@ -173,10 +175,16 @@ def _extract_crop(crop, bbox, cfg, component_id):
         cfg.length_weight, cfg.diameter_weight,
     )
     root.main_root = features[main_idx]
+    # only a branch that meets the main root at a junction has an insertion angle on it
+    j_labels, _ = ndimage.label(junction_mask, structure=EIGHT_CONNECTED)
+    touched = [_junctions_touched(j_labels, f.skeleton_rc, cfg.junction_proximity_threshold) for f in features]
     for i, f in enumerate(features):
-        if i != main_idx:
-            f.insertion_angle = insertion_angle(paths[main_idx], paths[i])
-            root.branches.append(f)
+        if i == main_idx:
+            continue
+        if touched[i] & touched[main_idx]:
+            f.insertion_angle = insertion_angle(root.main_root.skeleton_rc, f.skeleton_rc, dist,
+                                                cfg.insertion_reach_px)
+        root.branches.append(f)
     return root
 
 

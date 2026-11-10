@@ -7,8 +7,13 @@ import numpy as np
 import pandas as pd
 import pytest
 
+from scipy import ndimage
+
 import rhizotrace as rp
-from rhizotrace.core.extract import _ordered_path, _pixels_length
+from reference_walk import ordered_path, walk_insertion_angle
+from rhizotrace.core.branches import insertion_angle
+from rhizotrace.core.diameter import distance_map
+from rhizotrace.core.extract import EIGHT_CONNECTED, _junctions_touched, _pixels_length
 from rhizotrace.core.orientation import axis_orientation
 from rhizotrace.core.skeleton import path_angle, path_length
 
@@ -24,10 +29,10 @@ ROUNDED_2 = 0.006      # the fixtures round these to 2 decimals
 ROUNDED_4 = 6e-5       # the fixtures round mm values to 4 decimals
 
 
-def _check_traits(t: rp.Traits, golden, dpi, arrays=None, prefix=None, length_deviates=False):
+def _check_traits(t: rp.Traits, golden, dpi, arrays=None, prefix=None, length_deviates=False, main_rc=None):
     """Compare a Traits object with a formatted golden dict (and raw arrays when available).
 
-    Three intentional departures from the reference outputs are asserted in both
+    Four intentional departures from the reference outputs are asserted in both
     halves: the new value matches its new definition, and the reference value is still
     exactly reproducible from the same pixels. That keeps the deviation confined to
     the definition, so any other drift still fails.
@@ -39,13 +44,17 @@ def _check_traits(t: rp.Traits, golden, dpi, arrays=None, prefix=None, length_de
     the length of a single greedy walk that stops at the first junction gap.
     angle: the long axis of the pixel set in [0, 180), not the mean direction of that
     same greedy walk.
+    insertion angle (main_rc given): the reference walk value, 0 to 180 against the
+    walk's direction of the main root, is reproduced here; the new value, 0 to 90
+    between the two local axes and None for a branch that does not meet the main root,
+    is checked in _check_insertion.
     """
     assert t.angle == pytest.approx(axis_orientation(t.skeleton_rc), abs=1e-9, nan_ok=True)
-    assert path_angle(_ordered_path(t.skeleton_rc)) == pytest.approx(golden["angle"], abs=ROUNDED_2)
+    assert path_angle(ordered_path(t.skeleton_rc)) == pytest.approx(golden["angle"], abs=ROUNDED_2)
     assert t.length == pytest.approx(_pixels_length(t.skeleton_rc, CFG.length_estimator), abs=1e-9)
     chain = _pixels_length(t.skeleton_rc, "chain")
     if length_deviates:
-        assert path_length(_ordered_path(t.skeleton_rc), "chain") == pytest.approx(golden["length"], abs=ROUNDED_2)
+        assert path_length(ordered_path(t.skeleton_rc), "chain") == pytest.approx(golden["length"], abs=ROUNDED_2)
         assert chain >= golden["length"] - ROUNDED_2
     else:
         assert chain == pytest.approx(golden["length"], abs=ROUNDED_2)
@@ -57,8 +66,12 @@ def _check_traits(t: rp.Traits, golden, dpi, arrays=None, prefix=None, length_de
     if "id" in golden:
         assert t.id == golden["id"]
         assert t.merged_from == golden["merged_from"]
-    if "insertion_angle" in golden:
-        assert t.insertion_angle == pytest.approx(golden["insertion_angle"], abs=ROUNDED_2)
+    if main_rc is not None:
+        walk = walk_insertion_angle(ordered_path(main_rc), ordered_path(t.skeleton_rc))
+        if "insertion_angle" in golden:
+            assert walk == pytest.approx(golden["insertion_angle"], abs=ROUNDED_2)
+        else:
+            assert walk is None
     else:
         assert t.insertion_angle is None
     if arrays is not None:
@@ -89,7 +102,24 @@ def _check_root(root: rp.Root, key, golden, meta=None, arrays=None):
                   length_deviates=root.main_root is not root.aggregated)
     assert len(root.branches) == len(golden["branches"])
     for j, (b, gb) in enumerate(zip(root.branches, golden["branches"])):
-        _check_traits(b, gb, CFG.dpi, arrays, f"{key}/branch{j}", length_deviates=True)
+        _check_traits(b, gb, CFG.dpi, arrays, f"{key}/branch{j}", length_deviates=True,
+                      main_rc=root.main_root.skeleton_rc)
+    _check_insertion(root)
+
+
+def _check_insertion(root: rp.Root):
+    """Every branch's insertion angle is the local-axis angle on the main root when the
+    two share a junction region, and None otherwise."""
+    j_labels, _ = ndimage.label(root.junction_mask, structure=EIGHT_CONNECTED)
+    main = root.main_root.skeleton_rc
+    main_junctions = _junctions_touched(j_labels, main, CFG.junction_proximity_threshold)
+    dist = distance_map(root.crop)
+    for b in root.branches:
+        if _junctions_touched(j_labels, b.skeleton_rc, CFG.junction_proximity_threshold) & main_junctions:
+            expected = insertion_angle(main, b.skeleton_rc, dist, CFG.insertion_reach_px)
+            assert b.insertion_angle == expected and 0.0 <= b.insertion_angle <= 90.0
+        else:
+            assert b.insertion_angle is None
 
 
 def _check_frame(df, csv, image, roots):
@@ -98,6 +128,7 @@ def _check_frame(df, csv, image, roots):
     ref = csv[csv["image_name"] == image].reset_index(drop=True)
     assert len(df) == len(ref)
     traits = [t for r in roots for t in [r.aggregated, r.main_root] + list(r.branches)]
+    mains = [r.main_root.skeleton_rc for r in roots for _ in range(2 + len(r.branches))]
     for i in range(len(ref)):
         row, g, t = df.iloc[i], ref.iloc[i], traits[i]
         assert row["root"] == int(g["root_id"].split("_")[1]) and row["type"] == g["type"]
@@ -117,8 +148,11 @@ def _check_frame(df, csv, image, roots):
             assert row["number_of_branches"] == g["number_of_branches"]
         if g["type"] == "branch":
             assert row["branch"] == g["branch_id"]
+            # the frame carries the new value; the reference value is reproduced from the walk
+            assert row["insertion_angle"] == t.insertion_angle or (pd.isna(row["insertion_angle"]) and t.insertion_angle is None)
             if pd.notna(g["insertion_angle"]):
-                assert row["insertion_angle"] == pytest.approx(g["insertion_angle"], abs=ROUNDED_2)
+                walk = walk_insertion_angle(ordered_path(mains[i]), ordered_path(t.skeleton_rc))
+                assert walk == pytest.approx(g["insertion_angle"], abs=ROUNDED_2)
 
 
 @pytest.mark.parametrize("stem", SAMPLES)

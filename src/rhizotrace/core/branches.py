@@ -5,7 +5,9 @@ from dataclasses import dataclass, field
 
 import numpy as np
 from scipy import ndimage
+from scipy.spatial import cKDTree
 
+from .orientation import principal_axis
 from .skeleton import order_pixels
 
 
@@ -297,27 +299,29 @@ def select_main_root(lengths, diameters, connectivity, method, length_weight=0.7
     return int(np.argmax(length_weight * lengths / l_max + diameter_weight * diameters / d_max))
 
 
-N_INSERTION = 10
+def insertion_angle(main_rc, branch_rc, dist, reach):
+    """Acute angle (deg) between a lateral and the main root where they meet, 0 to 90.
 
-
-def insertion_angle(main_path, branch_path):
-    """Angle (deg) between a lateral's departure direction and the main root near the junction."""
-    main = np.asarray(main_path)
-    branch = np.asarray(branch_path)
-    if len(branch) < 3 or len(main) < 3:
+    The contact is the closest pair of pixels. Each side's direction is the principal
+    axis of its pixels within the local radius plus reach of the contact. The skeleton
+    bends inside the junction over about one radius, so the lateral's pixels closer
+    than that are left out. Both are axes, not arrows: a mask does not say which way
+    the main root runs.
+    """
+    main = np.asarray(main_rc, dtype=float).reshape(-1, 2)
+    branch = np.asarray(branch_rc, dtype=float).reshape(-1, 2)
+    if len(main) < 2 or len(branch) < 2:
         return None
-    d_start = np.min(np.sum((main - branch[0]) ** 2, axis=1))
-    d_end = np.min(np.sum((main - branch[-1]) ** 2, axis=1))
-    seg = branch[:N_INSERTION] if d_start <= d_end else branch[-N_INSERTION:][::-1]
-
-    def mean_dir(pts):
-        rads = np.arctan2(np.gradient(pts[:, 1].astype(float)), np.gradient(pts[:, 0].astype(float)))
-        return np.arctan2(np.mean(np.sin(rads)), np.mean(np.cos(rads)))
-
-    closest = int(np.argmin(np.sum((main - seg[0]) ** 2, axis=1)))
-    half = N_INSERTION // 2
-    main_seg = main[max(0, closest - half):min(len(main), closest + half)]
-    if len(main_seg) < 2:
+    d, nearest = cKDTree(main).query(branch)
+    i = int(np.argmin(d))
+    at_branch, at_main = branch[i], main[nearest[i]]
+    radius = float(dist[int(at_main[0]), int(at_main[1])])
+    window = radius + reach
+    from_contact = np.linalg.norm(branch - at_branch, axis=1)
+    near = from_contact <= window
+    beyond_bend = near & (from_contact >= radius)
+    branch_axis = principal_axis(branch[beyond_bend if beyond_bend.sum() >= 2 else near])
+    main_axis = principal_axis(main[np.linalg.norm(main - at_main, axis=1) <= window])
+    if branch_axis is None or main_axis is None:
         return None
-    diff = abs(np.degrees(mean_dir(seg)) - np.degrees(mean_dir(main_seg))) % 360
-    return float(min(diff, 360 - diff))
+    return float(np.degrees(np.arccos(min(abs(float(np.dot(branch_axis, main_axis))), 1.0))))

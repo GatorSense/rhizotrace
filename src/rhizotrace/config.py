@@ -38,6 +38,8 @@ class Config:
     diameter_weight: float = 0.3
     length_estimator: str = "corner"   # skeleton length from step counts: corner | kulpa |
                                        # chain_no_triangles | chain (see core.skeleton.ESTIMATORS)
+    insertion_reach_px: int = 15       # insertion angle: pixels beyond the local radius, on each side
+                                       # of the junction, that set the lateral's and main root's direction
 
     def __post_init__(self):
         if self.merge_method not in MERGE_METHODS:
@@ -54,6 +56,8 @@ class Config:
             raise ValueError("spur_length_diameters must not be negative")
         if self.length_estimator not in ESTIMATORS:
             raise ValueError(f"length_estimator must be one of {sorted(ESTIMATORS)}, got {self.length_estimator!r}")
+        if self.insertion_reach_px <= 0:
+            raise ValueError("insertion_reach_px must be positive")
 
     def min_root_length_px(self):
         """min_root_length_mm as a length in pixels at this dpi, unrounded."""

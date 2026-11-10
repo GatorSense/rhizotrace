@@ -9,7 +9,8 @@ import numpy as np
 import pytest
 
 import rhizotrace as rp
-from rhizotrace.core.extract import _ordered_path, _pixels_length
+from reference_walk import ordered_path
+from rhizotrace.core.extract import _pixels_length
 from rhizotrace.core.skeleton import path_length
 
 MASKS = ["sample1", "sample5", "sample9"]
@@ -32,7 +33,7 @@ def test_merged_branch_recovers_a_known_length():
     # pixels that separation removed
     assert 190 * 0.980 <= axis.length <= 200 * 0.980 + 1e-9
     # the old single walk stopped at the junction gap
-    assert path_length(_ordered_path(axis.skeleton_rc)) < 0.6 * axis.length
+    assert path_length(ordered_path(axis.skeleton_rc)) < 0.6 * axis.length
 
 
 @pytest.mark.parametrize("stem", MASKS)
