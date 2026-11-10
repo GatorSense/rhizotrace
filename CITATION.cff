@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "rhizotrace"
+abstract: "2D root phenotyping from minirhizotron images: per-root traits, branching, and soil-depth profiles"
+authors:
+  - family-names: Chowdhry
+    given-names: Ritesh
+    orcid: "https://orcid.org/0009-0001-5605-2075"
+  - family-names: Ojo
+    given-names: Diandra
+    orcid: "https://orcid.org/0000-0002-7429-5046"
+  - family-names: Kerr
+    given-names: Bakari
+  - family-names: Fernandez
+    given-names: Karla
+  - family-names: Zare
+    given-names: Alina
+    orcid: "https://orcid.org/0000-0002-4847-7604"
+license: MPL-2.0
+repository-code: "https://github.com/GatorSense/rhizotrace"
+keywords:
+  - root phenotyping
+  - minirhizotron
+  - plant phenomics
+  - image analysis
+version: 0.1.0
+date-released: 2026-11-10
