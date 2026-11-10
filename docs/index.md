@@ -60,6 +60,6 @@ Rectangles are steps, slanted boxes are data.
 
 ## Other pages
 
-- [Command line](cli.md): every command and option.
-- [Python](python.md): the same steps from a script or notebook.
+- [Running rhizotrace](usage.md): each task, in a terminal and in Python.
+- [Settings](settings.md): every setting and its default.
 - [Depth profiles](depth.md): traits by soil depth along a tube (experimental).
