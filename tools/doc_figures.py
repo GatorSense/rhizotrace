@@ -154,6 +154,49 @@ def overview_example():
     plt.close(fig)
 
 
+def insertion_example():
+    from scipy.spatial import cKDTree
+    from rhizotrace.core.orientation import principal_axis
+    h, w = 90, 170
+    m = np.zeros((h, w), bool)
+    for r0, c0, r1, c1 in ((25, 5, 25, 165), (25, 60, 85, 120)):
+        rr, cc = line(r0, c0, r1, c1)
+        m[rr, cc] = True
+    m = dilation(m, disk_se(4))
+    cfg = rp.Config()
+    root = rp.extract_roots(m, cfg)[0]
+    lateral = root.branches[0]
+    main, branch = root.main_root.skeleton_rc.astype(float), lateral.skeleton_rc.astype(float)
+    d, nearest = cKDTree(main).query(branch)
+    i = int(np.argmin(d))
+    at_branch, at_main = branch[i], main[nearest[i]]
+    radius = float(distance_map(root.crop)[int(at_main[0]), int(at_main[1])])
+    window = radius + cfg.insertion_reach_px
+    from_contact = np.linalg.norm(branch - at_branch, axis=1)
+    used_branch = (from_contact <= window) & (from_contact >= radius)
+    bend = from_contact < radius
+    used_main = np.linalg.norm(main - at_main, axis=1) <= window
+    r0, c0 = root.bbox[0], root.bbox[2]
+    img = np.ones((h, w, 3))
+    img[m] = MASK_GRAY
+    for rc, color in ((main, (0.55, 0.55, 0.55)), (branch, (0.55, 0.55, 0.55)), (main[used_main], SKELETON),
+                      (branch[used_branch], REMOVED), (branch[bend], (0.0, 0.0, 0.0))):
+        rc = rc.astype(int)
+        img[rc[:, 0] + r0, rc[:, 1] + c0] = color
+    fig, ax = plt.subplots(figsize=(WIDTH_IN * 0.8, WIDTH_IN * 0.8))
+    _panel(ax, img, f"Insertion angle {lateral.insertion_angle:.1f} degrees")
+    for axis, center in ((principal_axis(main[used_main]), at_main), (principal_axis(branch[used_branch]), at_branch)):
+        ends = np.array([center - axis * window, center + axis * window]) + (r0, c0)
+        ax.plot(ends[:, 1], ends[:, 0], "k--", lw=0.8)
+    ax.plot(at_main[1] + c0, at_main[0] + r0, "o", ms=5, mfc="none", mec="k")
+    half = window + 8
+    ax.set_xlim(at_main[1] + c0 - half, at_main[1] + c0 + half)
+    ax.set_ylim(at_main[0] + r0 + 1.4 * half, at_main[0] + r0 - 0.6 * half)
+    fig.tight_layout()
+    fig.savefig(os.path.join(OUT, "insertion_example.png"), dpi=DPI)
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     skeleton_behaviors()
@@ -161,3 +204,4 @@ if __name__ == "__main__":
     prune_example()
     merge_example()
     overview_example()
+    insertion_example()
