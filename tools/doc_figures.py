@@ -116,8 +116,35 @@ def prune_example():
     plt.close(fig)
 
 
+def merge_example():
+    h, w = 110, 170
+    m = np.zeros((h, w), bool)
+    for r0, c0, r1, c1 in ((55, 5, 55, 165), (55, 60, 100, 85), (10, 110, 100, 130)):
+        rr, cc = line(r0, c0, r1, c1)
+        m[rr, cc] = True
+    m = dilation(m, disk_se(2))
+    cfg = rp.Config()
+    sk, labeled, jmask = prune_spurs(rp.skeletonize(m), distance_map(m), cfg.spur_length_diameters)
+    pieces = [[p] for p in np.unique(labeled) if p >= 2]
+    branches = [b.merged_from for b in rp.merge_by_angle(labeled, jmask, cfg)]
+    colors = plt.get_cmap("tab10")
+    fig, axes = plt.subplots(2, 1, figsize=(WIDTH_IN, 5.0))
+    for ax, groups, title in ((axes[0], pieces, "Pieces after splitting at junctions"),
+                              (axes[1], branches, "Branches after merging")):
+        img = np.ones((h, w, 3))
+        img[m] = MASK_GRAY
+        for i, group in enumerate(groups):
+            img[np.isin(labeled, group)] = colors(i % 10)[:3]
+        img[sk & jmask] = 0
+        _panel(ax, img, title)
+    fig.tight_layout()
+    fig.savefig(os.path.join(OUT, "merge_example.png"), dpi=DPI)
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     skeleton_behaviors()
     tip_fork()
     prune_example()
+    merge_example()
