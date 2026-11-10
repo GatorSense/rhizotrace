@@ -137,12 +137,6 @@ seg.segment_folder("photos/", "masks/", model)
 table = rp.analyze_folder("masks/", rp.Config(dpi=300))
 ```
 
-## Profile roots by depth along a tube
-
-For minirhizotron tubes imaged in several levels, rhizotrace can join the levels of each
-tube into one image and report root length and diameter by soil depth. This is
-experimental: `rhizotrace depth` and `rhizotrace stitch`. See [Depth profiles](depth.md).
-
 ## Command options
 
 Besides the [settings](settings.md), each command has a few options of its own, mostly
@@ -159,8 +153,6 @@ for where its input and output go. `rhizotrace <command> --help` lists them all.
 | `segment` | `folder` | | folder of photos |
 | | `-o`, `--output` | `masks` | folder for the masks |
 | | `--overwrite` | off | segment again photos whose mask already exists |
-
-`depth` and `stitch` are covered on [Depth profiles](depth.md).
 
 ## Working with the results in code
 

@@ -44,6 +44,3 @@ These belong to the segmentation model, not to `Config`. In Python they are argu
 | `device` | `--device` | `auto` | `cpu`, `cuda`, or `auto` for a GPU when there is one |
 | `threshold` | `--threshold` | 0.7735 | a pixel is root above this value |
 | `normalize` | Python only | `per_image` | scale each image's output to 0 to 1 before the threshold; `none` uses the raw output |
-
-The settings for depth profiles, the tube geometry and camera, are on
-[Depth profiles](depth.md).

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rhizotrace"
 version = "0.1.0"
-description = "2D root phenotyping from minirhizotron images: per-root traits, branching, and soil-depth profiles"
+description = "2D root phenotyping from minirhizotron images: per-root traits and branching"
 readme = "README.md"
 license = "MPL-2.0"
 license-files = ["LICENSE", "NOTICE"]

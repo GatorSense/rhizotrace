@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
 title: "rhizotrace"
-abstract: "2D root phenotyping from minirhizotron images: per-root traits, branching, and soil-depth profiles"
+abstract: "2D root phenotyping from minirhizotron images: per-root traits and branching"
 authors:
   - family-names: Chowdhry
     given-names: Ritesh

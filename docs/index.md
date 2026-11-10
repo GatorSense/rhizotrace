@@ -62,4 +62,3 @@ Rectangles are steps, slanted boxes are data.
 
 - [Running rhizotrace](usage.md): each task, in a terminal and in Python.
 - [Settings](settings.md): every setting and its default.
-- [Depth profiles](depth.md): traits by soil depth along a tube (experimental).
