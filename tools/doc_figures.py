@@ -142,9 +142,22 @@ def merge_example():
     plt.close(fig)
 
 
+def overview_example():
+    from rhizotrace.viz import plot_overview
+    mask = rp.load_mask(rp.sample_masks() / "sample1.png")
+    rows = np.flatnonzero(mask.any(axis=1))
+    mask = mask[max(rows[0] - 20, 0):rows[-1] + 20]
+    fig, ax = plt.subplots(figsize=(WIDTH_IN, WIDTH_IN * mask.shape[0] / mask.shape[1]))
+    plot_overview(mask, rp.extract_roots(mask, rp.Config()), ax=ax)
+    fig.tight_layout()
+    fig.savefig(os.path.join(OUT, "overview_example.png"), dpi=DPI)
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     skeleton_behaviors()
     tip_fork()
     prune_example()
     merge_example()
+    overview_example()
