@@ -5,8 +5,7 @@ on the root's outline or from a ragged tip, not from real branches. Left in plac
 spur would be counted as a branch. Pruning removes them to reduce noise in the results.
 
 A spur is recognized by comparing its length with the root's diameter where it joins the
-root. The rule is deliberately careful, so that real branches are not pruned. The paper
-describes the rule and the evidence behind it. <!-- TODO(cite): rhizotrace paper, spur pruning section -->
+root. The rule is deliberately careful, so that real branches are not pruned.
 
 ## The rule
 

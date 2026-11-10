@@ -7,7 +7,6 @@ work with: length is measured along it, and junctions and branches are found on 
 The skeleton comes from scikit-image's
 [`skeletonize`](https://scikit-image.org/docs/stable/api/skimage.morphology.html#skimage.morphology.skeletonize),
 which uses the thinning algorithm of Zhang and Suen (1984) for 2D images.
-<!-- TODO(verify): Zhang, T. Y., & Suen, C. Y. (1984). A fast parallel algorithm for thinning digital patterns. Communications of the ACM, 27(3), 236-239. -->
 
 ## What skeletonizing does to a root shape
 
@@ -30,3 +29,8 @@ Mask in gray, skeleton in red, free ends circled.
   Pruning keeps the longer arm.
 
 ![A ragged tip on a real mask](images/skeleton_tip_fork.png)
+
+## References
+
+Zhang, T. Y., & Suen, C. Y. (1984). A fast parallel algorithm for thinning digital
+patterns. *Communications of the ACM*, 27(3), 236-239. https://doi.org/10.1145/357994.358023

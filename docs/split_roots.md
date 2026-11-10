@@ -2,7 +2,7 @@
 
 Every mask is split into individual roots with connected component labeling from
 SciPy ([`scipy.ndimage.label`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.label.html);
-Virtanen et al., 2020). <!-- TODO(verify): Virtanen et al. 2020, Nature Methods 17, 261-272 -->
+Virtanen et al., 2020).
 A blob is a group of root pixels connected to each other. Labeling gives every pixel
 in a blob the same number, and each blob a different number. Small blobs are dropped.
 Each remaining blob is then cut out of the mask and passed on to be measured on its own.
@@ -46,3 +46,9 @@ is described in [Measure each root](measure_roots.md).
 Each root is cut out as a rectangle around it, with a small margin. Any part of another
 root that falls inside that rectangle is removed from the cutout. A neighboring root
 therefore never affects the measurements of another.
+
+## References
+
+Virtanen, P., Gommers, R., Oliphant, T. E., et al. (2020). SciPy 1.0: fundamental
+algorithms for scientific computing in Python. *Nature Methods*, 17(3), 261-272.
+https://doi.org/10.1038/s41592-019-0686-2
