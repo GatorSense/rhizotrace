@@ -40,7 +40,7 @@ def test_scan_folder_per_tube(tubes, tube):
     assert tube.levels == TUBE["levels"] and tube.missing_levels == []
     assert tube.info is INFO
     assert "MISSING" not in tubes.report()
-    assert len(tubes.unparsed) == 11    # the sample masks carry no level token
+    assert len(tubes.unparsed) == 11    # the fixture masks carry no level token
 
 
 def test_scan_single_tube_folder():

@@ -1,6 +1,7 @@
 """Reading masks and images, batch runs over folders."""
 
 import os
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -10,6 +11,16 @@ from .config import Config
 from .core.extract import COLUMNS, extract_traits
 
 IMAGE_EXTENSIONS = (".png", ".tif", ".tiff", ".jpg", ".jpeg", ".bmp")
+
+
+def sample_masks():
+    """Folder of the three sample root masks shipped with the package (300 DPI)."""
+    return Path(__file__).parent / "samples" / "masks"
+
+
+def sample_photos():
+    """Folder of the photos the sample masks were drawn on."""
+    return Path(__file__).parent / "samples" / "photos"
 
 
 def load_mask(path, threshold=0.5):

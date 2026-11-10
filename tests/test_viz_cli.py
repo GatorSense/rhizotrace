@@ -84,3 +84,15 @@ def test_cli_depth(tmp_path):
 def test_cli_depth_requires_offset(tmp_path):
     with pytest.raises(ValueError, match="offset_cm"):
         main(["depth", str(DATA), "-o", str(tmp_path / "p.csv")])
+
+
+def test_cli_samples(tmp_path):
+    out = tmp_path / "samples"
+    main(["samples", str(out)])
+    masks = sorted(p.name for p in (out / "masks").glob("*.png"))
+    photos = sorted(p.name for p in (out / "photos").glob("*.png"))
+    assert masks == photos == ["sample1.png", "sample2.png", "sample3.png"]
+    assert masks == sorted(p.name for p in rp.sample_masks().glob("*.png"))
+    assert (out / "README.md").exists()
+    mask, photo = rp.load_mask(out / "masks" / "sample1.png"), rp.load_image(out / "photos" / "sample1.png")
+    assert mask.max() == 255 and photo.shape[:2] == mask.shape

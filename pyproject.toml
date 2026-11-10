@@ -50,5 +50,8 @@ dev = ["pytest>=7", "pytest-cov"]
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+rhizotrace = ["samples/*/*.png", "samples/README.md"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

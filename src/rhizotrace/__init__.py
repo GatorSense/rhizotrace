@@ -14,7 +14,7 @@ from .depth.geometry import LevelPosition, level_positions
 from .depth.profile import TubeResult, analyze_tube, bin_profile, depth_profile, profile_from_result
 from .depth.scan import Tube, TubeSet, scan_tubes
 from .depth.stitch import Stitched, stitch, stitch_arrays
-from .io import analyze_folder, load_image, load_mask
+from .io import analyze_folder, load_image, load_mask, sample_masks, sample_photos
 
 try:
     __version__ = _version("rhizotrace")
@@ -24,7 +24,7 @@ except PackageNotFoundError:
 __all__ = [
     "Config", "Scanner", "TubeInfo", "load_tube_info", "units",
     "load_mask", "load_image", "extract_traits", "extract_roots", "extract_root", "roots_to_frame",
-    "analyze_folder", "Root", "Traits",
+    "analyze_folder", "sample_masks", "sample_photos", "Root", "Traits",
     "skeletonize", "order_pixels", "path_length", "skeleton_length", "skeleton_edges", "step_counts",
     "free_ends", "ESTIMATORS",
     "detect_junctions", "separate_branches", "merge_by_angle", "merge_by_diameter",

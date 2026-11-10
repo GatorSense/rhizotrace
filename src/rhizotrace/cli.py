@@ -1,7 +1,8 @@
-"""Command line: traits (masks -> table), depth (tube levels -> profiles), stitch, segment."""
+"""Command line: traits (masks -> table), depth (tube levels -> profiles), stitch, segment, samples."""
 
 import argparse
 import os
+import shutil
 import sys
 
 import pandas as pd
@@ -13,7 +14,7 @@ from .core.extract import extract_roots, roots_to_frame
 from .depth.profile import analyze_tube, profile_from_result
 from .depth.scan import scan_tubes
 from .depth.stitch import stitch
-from .io import list_images, load_mask
+from .io import list_images, load_mask, sample_masks, sample_photos
 
 
 def _add_config_args(p):
@@ -154,6 +155,17 @@ def cmd_segment(args):
     print(f"{len(paths)} masks in {args.output}")
 
 
+def cmd_samples(args):
+    for name, src in (("masks", sample_masks()), ("photos", sample_photos())):
+        dst = os.path.join(args.folder, name)
+        os.makedirs(dst, exist_ok=True)
+        paths = sorted(src.glob("*.png"))
+        for p in paths:
+            shutil.copy(p, os.path.join(dst, p.name))
+        print(f"{len(paths)} sample {name} in {dst}")
+    shutil.copy(sample_masks().parent / "README.md", os.path.join(args.folder, "README.md"))
+
+
 def build_parser():
     p = argparse.ArgumentParser(prog="rhizotrace", description="2D root phenotyping from minirhizotron images.")
     p.add_argument("--version", action="version", version=__version__)
@@ -193,6 +205,10 @@ def build_parser():
     g.add_argument("--overwrite", action="store_true", help="redo masks that already exist")
     _add_segment_args(g, flag=False)
     g.set_defaults(func=cmd_segment)
+
+    m = sub.add_parser("samples", help="copy the sample masks and photos into a folder, to try the package on")
+    m.add_argument("folder", nargs="?", default="samples")
+    m.set_defaults(func=cmd_samples)
     return p
 
 
