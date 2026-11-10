@@ -18,8 +18,8 @@ A root with a single branch is its own main root. On a tie, the first branch fou
 Set the rule with `--root-selection` or `Config(root_selection=...)`; the `combined`
 weights with `Config(length_weight=..., diameter_weight=...)`.
 
-The choice changes the `main_root` row and every insertion angle, but none of the
-whole-root (`aggregated`) traits.
+The choice changes the `main_root` row, which laterals have an insertion angle, and every
+insertion angle, but none of the whole-root (`aggregated`) traits.
 
 ## Insertion angle
 
@@ -35,12 +35,14 @@ black pixels are left out.
    junction, over about one root radius. So the lateral's direction is taken from its
    pixels between one root radius and 15 pixels beyond that, measured from the contact
    point. The main root's direction is taken from its pixels within the same distance, on
-   both sides. The root radius is measured at the contact point.
+   both sides. The root radius is half the main root's local diameter at the contact point.
+   A lateral too short to have two pixels past the bend uses all its pixels within that
+   distance.
 3. **Their directions.** Each set of pixels gives one direction: the line along which its
    pixels spread most, the same way the `angle` column is found (see
    [Angle](measurements.md#angle)).
 4. **The angle.** The insertion angle is the angle between the two directions, from 0 to 90
-   degrees: 90 for a lateral leaving at a right angle, near 0 for one running almost along
+   degrees: 90 for a lateral leaving at a right angle, near 0 for one continuing almost along
    the main root.
 
 The angle stops at 90 degrees because a mask does not show which way the main root grows.
