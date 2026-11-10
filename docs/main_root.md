@@ -56,3 +56,7 @@ A branch that shares no junction with the main root, such as a branch growing fr
 branch, has no insertion angle: its `insertion_angle` cell is empty. This is common. On
 2,000 random PRMI masks it was 65% of all branch rows. The
 [overview image](output.md#overview-image) shows which branches touch the main root.
+
+---
+
+← [Merge pieces into branches](merge.md) · [Overview](index.md) · [Measure each root](measure_roots.md) · [Output](output.md) →

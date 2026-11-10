@@ -64,3 +64,7 @@ is 1.
 The removed junction pixels belong to no piece. The length of each branch therefore
 leaves out its junction region, while the whole-root length includes it. The branch
 lengths of a root add up to slightly less than its total length.
+
+---
+
+← [Prune spurs](prune_spurs.md) · [Overview](index.md) · [Measure each root](measure_roots.md) · [Length, diameter and angle](measurements.md) →

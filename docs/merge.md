@@ -101,3 +101,7 @@ merging. With `angle`, every piece takes part.
   and the rest of the main root becomes the branch.
 - With the default `endpoint` mode, a curved piece's direction is the straight line to its
   far end, which can differ from its direction at the junction.
+
+---
+
+← [Length, diameter and angle](measurements.md) · [Overview](index.md) · [Measure each root](measure_roots.md) · [Choose main root](main_root.md) →

@@ -89,3 +89,7 @@ also removed: see the limits below.
 - Every measurement is made on the pruned skeleton, including the whole-root
   (`aggregated`) row. Pruning therefore shortens total length slightly, not only the
   branch count.
+
+---
+
+← [Skeletonize](skeletonize.md) · [Overview](index.md) · [Measure each root](measure_roots.md) · [Split skeleton at junctions](split_junctions.md) →

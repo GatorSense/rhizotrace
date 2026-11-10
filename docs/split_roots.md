@@ -52,3 +52,7 @@ therefore never affects the measurements of another.
 Virtanen, P., Gommers, R., Oliphant, T. E., et al. (2020). SciPy 1.0: fundamental
 algorithms for scientific computing in Python. *Nature Methods*, 17(3), 261-272.
 https://doi.org/10.1038/s41592-019-0686-2
+
+---
+
+← [Input masks](input_masks.md) · [Overview](index.md) · [Measure each root](measure_roots.md) →

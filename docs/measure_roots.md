@@ -83,4 +83,6 @@ than `min_root_length_mm` (0.5 mm by default), before or after spur pruning.
 
 The results go into the [trait table](output.md).
 
-[Back to the overview](index.md)
+---
+
+← [Split mask into individual roots](split_roots.md) · [Overview](index.md) · [Skeletonize](skeletonize.md) →

@@ -134,3 +134,7 @@ https://doi.org/10.1016/S0146-664X(77)80021-X
 Vossepoel, A. M., & Smeulders, A. W. M. (1982). Vector code probability and metrication
 error in the representation of straight lines of finite length. *Computer Graphics and
 Image Processing*, 20(4), 347-364. https://doi.org/10.1016/0146-664X(82)90057-0
+
+---
+
+← [Split skeleton at junctions](split_junctions.md) · [Overview](index.md) · [Measure each root](measure_roots.md) · [Merge pieces into branches](merge.md) →

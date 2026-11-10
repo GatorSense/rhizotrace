@@ -34,3 +34,7 @@ not meet them does not raise an error. It gives misleading results instead.
 Each mask is read, converted to grayscale, and binarized as described above. The result
 has two values: 255 for root and 0 for background. This binary mask is what the next
 step, [Split mask into individual roots](split_roots.md), works on.
+
+---
+
+← [Segment images into root masks](segmentation.md) · [Overview](index.md) · [Split mask into individual roots](split_roots.md) →

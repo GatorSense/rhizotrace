@@ -34,3 +34,7 @@ Mask in gray, skeleton in red, free ends circled.
 
 Zhang, T. Y., & Suen, C. Y. (1984). A fast parallel algorithm for thinning digital
 patterns. *Communications of the ACM*, 27(3), 236-239. https://doi.org/10.1145/357994.358023
+
+---
+
+← [Measure each root](measure_roots.md) · [Overview](index.md) · [Prune spurs](prune_spurs.md) →

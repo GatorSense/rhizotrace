@@ -104,3 +104,7 @@ Xu, W., Yu, G., Zare, A., Zurweller, B., Rowland, D. L., Reyes-Cabrera, J., Frit
 F. B., Matamala, R., & Juenger, T. E. (2020). Overcoming small minirhizotron datasets using
 transfer learning. *Computers and Electronics in Agriculture*, 175, 105466.
 https://doi.org/10.1016/j.compag.2020.105466
+
+---
+
+← [Overview](index.md) · [Input masks](input_masks.md) →

@@ -1,5 +1,3 @@
-**Work in progress.** These pages are being written step by step; some steps have no page yet.
-
 # How rhizotrace measures roots
 
 rhizotrace takes binary root masks from minirhizotron tubes or other root images, or
@@ -62,3 +60,7 @@ Rectangles are steps, slanted boxes are data.
 
 - [Running rhizotrace](usage.md): each task, in a terminal and in Python.
 - [Settings](settings.md): every setting and its default.
+
+---
+
+[Segment images into root masks](segmentation.md) →

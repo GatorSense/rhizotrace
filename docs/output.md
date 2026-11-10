@@ -68,3 +68,7 @@ pixels with no box were dropped as too small or too short.
 
 In Python, the same picture comes from `rhizotrace.viz.plot_overview(mask, roots)`, with
 `roots` from `extract_roots`.
+
+---
+
+← [Choose main root](main_root.md) · [Overview](index.md)

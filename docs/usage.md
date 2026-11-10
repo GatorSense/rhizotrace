@@ -176,3 +176,7 @@ root.bbox               # where it is in the mask: (min_row, max_row, min_col, m
 `skeleton_rc`, the skeleton pixels as (row, column) within the root's crop. Branches also
 carry `insertion_angle`. `rp.units.to_mm(value, dpi)` converts pixels to millimeters, and
 `rp.roots_to_frame(roots, dpi)` turns the roots into the table.
+
+---
+
+[Overview](index.md) · [Settings](settings.md)
