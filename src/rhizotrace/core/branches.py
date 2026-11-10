@@ -20,6 +20,13 @@ class Branch:
 
 @dataclass
 class _Segment:
+    """A skeleton piece, an edge of the junction graph.
+
+    Its two ends are 'a' (first pixel of the ordered path) and 'b' (last pixel). Each end
+    has an inward direction, pointing from that end into the piece, and the junction it
+    touches, or None at a root tip.
+    """
+
     id: int
     pixels: list
     direction_a: np.ndarray = None  # unit vector pointing into the segment from each end
@@ -38,13 +45,19 @@ class _Segment:
 
 @dataclass
 class _Junction:
+    """A junction region, a node of the graph. connections names every piece end touching it."""
+
     id: int
     pixels: np.ndarray                          # (N, 2)
     connections: list = field(default_factory=list)  # (segment id, 'a' | 'b')
 
 
 def _direction(pixels, end, k, mode):
-    """Unit vector pointing into the path from one end ('a' = start, 'b' = end)."""
+    """Unit vector pointing into the path from one end ('a' = start, 'b' = end).
+
+    endpoint: the straight line to the other end. local: the first k pixels from this end.
+    hybrid: endpoint, unless it differs from local by more than 45 degrees.
+    """
     if len(pixels) < 2:
         return np.array([0.0, 1.0])
     k = max(min(k, len(pixels) // 4, len(pixels) - 1), 1)
@@ -78,7 +91,12 @@ def _nearest_junction(j_labels, point, prox):
 
 
 def _build(labeled, junction_mask, cfg):
-    """Segments (one per labeled piece) and junctions (one per connected junction region)."""
+    """The junction graph: segments (one per labeled piece) and junctions (one per region).
+
+    Each segment end is linked to the nearest junction within junction_proximity_threshold
+    pixels, in both directions: the segment records the junction at each end, and the
+    junction records (segment id, end). An end with no junction that close is a root tip.
+    """
     j_labels, _ = ndimage.label(junction_mask)
     junctions = {}
     for j, sl in enumerate(ndimage.find_objects(j_labels), start=1):
@@ -108,17 +126,25 @@ def _build(labeled, junction_mask, cfg):
 
 
 def _merge_angle(seg1, end1, seg2, end2):
-    """Continuation angle at a shared junction, 180 = perfectly aligned."""
+    """Continuation angle at a shared junction, 180 = perfectly aligned.
+
+    Each segment uses the direction of the end that touches the junction, so both vectors
+    point away from it whichever way the segments were ordered. A root running straight
+    through the junction gives two opposite vectors: 180 degrees.
+    """
     d1 = seg1.direction_a if end1 == "a" else seg1.direction_b
     d2 = seg2.direction_a if end2 == "a" else seg2.direction_b
     return float(np.degrees(np.arccos(np.clip(np.dot(d1, d2), -1, 1))))
 
 
 def _join(seg1, end1, seg2, end2, new_id, cfg):
+    """One segment from two that meet at a junction: seg1 then seg2, keeping the far ends."""
+    # orient seg1 to end at the junction and seg2 to start there
     pixels1 = list(seg1.pixels) if end1 == "b" else list(seg1.pixels[::-1])
     pixels2 = list(seg2.pixels) if end2 == "a" else list(seg2.pixels[::-1])
     combined = pixels1 + pixels2[1:] if len(pixels2) > 1 else pixels1
     merged = _Segment(new_id, combined, merged_from=seg1.merged_from + seg2.merged_from)
+    # the new ends are the far ends of the two segments, with their junctions
     merged.junction_a = seg1.junction_b if end1 == "a" else seg1.junction_a
     merged.junction_b = seg2.junction_a if end2 == "b" else seg2.junction_b
     merged.direction_a = _direction(combined, "a", cfg.local_k, cfg.angle_mode)
@@ -127,21 +153,29 @@ def _join(seg1, end1, seg2, end2, new_id, cfg):
 
 
 def merge_by_angle(labeled, junction_mask, cfg):
-    """Join pieces that continue straight through a junction, working inward from root tips."""
+    """Join pieces that continue straight through a junction, working inward from root tips.
+
+    Each junction is decided once. Its pairs of pieces are joined straightest first, each
+    piece at most once there. A pair joins when its angle is within merge_angle_threshold
+    of straight (180 degrees), or, when only two pieces meet, when it is at least
+    force_merge_min_angle. A joined piece goes back in the queue while it still reaches
+    an undecided junction.
+    """
     segments, junctions = _build(labeled, junction_mask, cfg)
     if not segments:
         return []
 
-    active = dict(segments)
-    processed = set()
+    active = dict(segments)       # segments not yet absorbed into a join
+    processed = set()             # junctions already decided
     next_id = max(active) + 1
     min_angle = 180 - cfg.merge_angle_threshold
 
+    # start from the pieces that end in a root tip; a root that is all loops has none
     queue = deque(s.id for s in active.values() if s.has_tip()) or deque(active)
     while queue:
         sid = queue.popleft()
         if sid not in active:
-            continue
+            continue              # already joined into another segment
         current = active[sid]
         for j_id in (current.junction_a, current.junction_b):
             if j_id is None or j_id in processed:
@@ -153,6 +187,7 @@ def merge_by_angle(labeled, junction_mask, cfg):
                 continue
             is_deg2 = len(here) == 2
 
+            # continuation angle of every pair of pieces at this junction
             angles = {}
             for i in range(len(here)):
                 for k in range(i + 1, len(here)):
@@ -160,11 +195,13 @@ def merge_by_angle(labeled, junction_mask, cfg):
                     if s1 != s2:
                         angles[(s1, s2)] = (_merge_angle(active[s1], e1, active[s2], e2), e1, e2)
 
+            # straightest pair first; a piece joins at most once at this junction
             merged_here = set()
             for (s1, s2), (angle, e1, e2) in sorted(angles.items(), key=lambda x: -x[1][0]):
                 if s1 in merged_here or s2 in merged_here or s1 not in active or s2 not in active:
                     continue
                 if is_deg2 and cfg.force_merge_degree_2:
+                    # only two pieces meet: a bend in one root, joined unless sharper than the floor
                     do_merge = angle >= cfg.force_merge_min_angle
                 else:
                     do_merge = angle >= min_angle
@@ -173,6 +210,8 @@ def merge_by_angle(labeled, junction_mask, cfg):
 
                 new = _join(active[s1], e1, active[s2], e2, next_id, cfg)
                 next_id += 1
+                # every junction the two pieces touched now lists the joined piece instead
+                # (dict.fromkeys drops duplicates in a fixed order, so results do not vary)
                 touched = {j for s in (active[s1], active[s2]) for j in (s.junction_a, s.junction_b)
                            if j is not None}
                 del active[s1], active[s2]
@@ -188,6 +227,7 @@ def merge_by_angle(labeled, junction_mask, cfg):
                         else:
                             updated.append((cs, ce))
                     jj.connections = list(dict.fromkeys(updated))
+                # the joined piece is decided again at any junction still open at its ends
                 for j_next in (new.junction_a, new.junction_b):
                     if j_next is not None and j_next not in processed:
                         queue.append(new.id)
